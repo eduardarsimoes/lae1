@@ -6,9 +6,12 @@ Trabalho desenvolvido durante a disciplina:
 # Sumário
 
 ### 1. Componentes <br>
-Integrantes do grupo<br>
+Integrantes do grupo
+<br>
 Eduarda Simões: eduardarsimoes@gmail.com
+<br>
 Serenna Ferrari: serenna.ferrari@hotmail.com
+<br>
 Thais de Souza: email_terceiro_componente@dominio.com
 <br>
 
