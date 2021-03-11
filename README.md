@@ -7,9 +7,10 @@ Trabalho desenvolvido durante a disciplina:
 
 ### 1. Componentes <br>
 Integrantes do grupo<br>
-primeiro_componente_do_grupo:email_primeiro_componente@dominio.com<br>
-segundo_componente_do_grupo:email_segundo_componente@dominio.com<br>
-...<br>
+Eduarda Simões: eduardarsimoes@gmail.com
+Serenna Ferrari: serenna.ferrari@hotmail.com
+Thais de Souza: email_terceiro_componente@dominio.com
+<br>
 
 ### 2.Apresentação dos Datasets (Clássico + Em estudo)<br>
 <br>Visão geral das bases de dados<br>
