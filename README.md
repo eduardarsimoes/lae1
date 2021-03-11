@@ -12,7 +12,7 @@ Eduarda Simões: eduardarsimoes@gmail.com
 <br>
 Serenna Ferrari: serenna.ferrari@hotmail.com
 <br>
-Thais de Souza: email_terceiro_componente@dominio.com
+Thais de Souza: thais.souza.ifes@gmail.com
 <br>
 
 ### 2.Apresentação dos Datasets (Clássico + Em estudo)<br>
