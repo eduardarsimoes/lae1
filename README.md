@@ -29,8 +29,9 @@ Visão geral das bases de dados<br>
 A base de dados possui informações a respeito dos tripulantes do navio Titanic, como informações pessoais desde o nome, idade, suas relações familiares a bordo e embarque, se sobreviveram etc, no qual deseja-se prever se certos dados de um indivíduo aumentam a chance de sobrevivência e se sim, quais seriam os fatores, sendo portanto o survived o atributo alvo. Foi possível observar que os tipos de atributos existentes são categóricos (nominais e binário) e também numéricos (discreto e contínuo). Ademais a isso, acredita-se que existem atributos irrelevantes para o propósito estabelecido como passengerId, name, cabin e ticket, pois não influenciam na sobrevivência (ou não sobrevivência) do indivíduo. É válido ressaltar que a base possui 891 registros e foi disponibilizada em formato csv. 
 Analisando os problemas existentes na base foi encontrado incompletude (valores ausentes referentes a cabine, idade e porto de embarque), inconsistência (violação de domínio na idade e algumas discrepâncias quando preço da passagem e classe do navio são associados). Visto isso, para melhor clareza e qualidade dos dados, alguns atributos foram renomeados para melhor entendimento, são eles:<br>
 </p>
+
 | Nome | Novo nome |
-|------|-----------|
+|----|----|
 | SibSp | siblingsSpousesOnboard |
 | Parch | parentsChildrenOnboard |
 | Fare | fareTicket |
@@ -47,7 +48,7 @@ Feita a análise no dataset, os problemas encontrados foram a incompletude (muit
 </p>
 
 | Nome atual | Pergunta traduzida | Novo nome |
-|-|------------------------------------|--|
+|---|---|---|
 | SC1 | Qual a sua idade | age |
 | SC7 | Fumante, Ex Fumante, Nunca fumou | have_smoked |
 | SC8_1 | Classifique sua saúde física geral  | physical_health_rate |
@@ -86,7 +87,7 @@ Visto isso, também ao analisarmos os documentos junto à base de dados, separam
 </p>
 
 | Nome | Pergunta traduzida | Resposta|
-|-|-----------------------------------|-|
+|---|---|---|
 | CC1A | Teve artrite ou reumatismo. | 1 sim, 5 não, 8 não sabe |
 | CC1B | Teve problemas nas costas ou pescoço. | 1 sim, 5 não, 8 não sabe |
 | CC1C | Teve frequente ou fortes dores de cabeça. | 1 sim, 5 não, 8 não sabe |
@@ -187,7 +188,7 @@ Visto isso, também ao analisarmos os documentos junto à base de dados, separam
 Tabela 03 - Atributos em que sabemos a pergunta e a respectiva resposta - dataset Mania
 
 | Nome |
-|------|
+|---|
 | CC2 |
 | CC2A01 |
 | CC2A02 |
@@ -236,8 +237,8 @@ Tabela 04 - Atributos que não sabemos a pergunta e/ou a respectiva resposta (41
 Por fim, detectamos siglas referenciadas nos documentos as quais não conseguimos descobrir do que se tratam, são elas:
 </p>
 
-| Nome|
-| ------------------------- |
+| Nome |
+| --- |
 | PD1 INTROD 1 |
 | SP1 |
 | SO1 |
