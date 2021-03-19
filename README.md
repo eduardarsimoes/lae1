@@ -15,7 +15,7 @@ Thais de Souza: thais.souza.ifes@gmail.com
 <br>
 
 ### 2.Apresentação dos Datasets (Clássico + Em estudo)<br>
-<br>Visão geral das bases de dados<br>
+Visão geral das bases de dados<br>
 
 > Após obter a(s) base(s) de dados Responda as seguintes perguntas sobre o conjunto de dados:
 * seus dados são sobre o que? 
