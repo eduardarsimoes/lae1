@@ -17,7 +17,7 @@ Thais de Souza: thais.souza.ifes@gmail.com
 ### 2.Apresentação dos Datasets (Clássico + Em estudo)<br>
 Visão geral das bases de dados<br>
 
-> Após obter a(s) base(s) de dados Responda as seguintes perguntas sobre o conjunto de dados:
+> Após obter a(s) base(s) de dados, responda as seguintes perguntas sobre o conjunto de dados:
 * seus dados são sobre o que? 
 * o que você deseja com este conjunto de dados?
 * quais são os tipos de atributos existentes e qual é o atributo alvo? 
