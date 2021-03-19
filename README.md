@@ -33,6 +33,7 @@ Analisando os problemas existentes na base foi encontrado incompletude (valores 
 - Embarked: embarkedHarbor <br>
 - pClass: shipClass <br>
 </p>
+
 >#### 2.2 Visão geral da base de dados em estudo:<br>
 <p align="justify">
 </p>
