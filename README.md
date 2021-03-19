@@ -116,9 +116,9 @@ CC7 | Checkpoint cartao referência. | Binário (1 ?, 2 todas as outras possibil
 CC8 | Checkpoint cartao referência. | Numérico
 CC9 | Vezes que viu o médico nos últimos 12 meses para tratamento. | Numérico, 998 não sabe
 CC10A | Interfere na gestão da casa (12 meses). | Escala 0 a 10, 97 não se aplica, 98 não sabe, 99 recusou
-CC10B | Interfere na habilidade de trabalhar (12 meses). | escala 0 a 10, 97 não se aplica, 98 não sabe, 99 recusou, um valor ‘30’ avulso
-CC10C | Interfere nas relações próximas (12 meses). | escala 0 a 10, 97 não se aplica, 98 não sabe, 99 recusou
-CC10D | Interfere na vida social (12 meses). | escala 0 a 10, 97 não se aplica, 98 não sabe, 99 recusou, um valor ‘50’ avulso
+CC10B | Interfere na habilidade de trabalhar (12 meses). | Escala 0 a 10, 97 não se aplica, 98 não sabe, 99 recusou, um valor ‘30’ avulso
+CC10C | Interfere nas relações próximas (12 meses). | Escala 0 a 10, 97 não se aplica, 98 não sabe, 99 recusou
+CC10D | Interfere na vida social (12 meses). | Escala 0 a 10, 97 não se aplica, 98 não sabe, 99 recusou, um valor ‘50’ avulso
 CC11 | Checkpoint (CC10A - CC10D). | Binário (1 ?, 2 todas as outras possibilidades)
 CC12 | Número de dias após 365 que estava incapaz de realizar atividades normais. | Numérico, 998 não sabe
 CC20A | Problemas para dormir nos últimos 12 meses. | 1 sim, 5 não, 8 não sabe
@@ -150,10 +150,10 @@ CC29 | Checkpoint (CC1A, CC1B, CC1C, CC1D) | Binário (1 ?, 2 todas as outras po
 CC30 | Dias por mês com dor em mês severo. | Numérico, 998 não sabe, 99 recusou
 CC31A | Duração de dor em um mês severo. | Numérico, 998 não sabe, 99 recusou
 CC31B | Unidade de tempo de CC31A. | 1 muitas vezes, 2 às vezes, 8 não sabe, 9 recusou
-CC32 | Pior dor dos últimos 12 meses. | escala de 1 a 10, 998 não sabe, 999 se recusou, um valor ‘81’ avulso
-CC33 | Menor dor dos últimos 12 meses. | escala de 1 a 10, 998 não sabe, 999 se recusou
-CC34 | Média de dor dos últimos 12 meses. | escala de 1 a 10, 998 não sabe, 999 se recusou
-CC35 | Alívio a partir do tratamento providenciado. | escala de 1 a 10, 998 não sabe, 999 se recusou
+CC32 | Pior dor dos últimos 12 meses. | Escala de 1 a 10, 998 não sabe, 999 se recusou, um valor ‘81’ avulso
+CC33 | Menor dor dos últimos 12 meses. | Escala de 1 a 10, 998 não sabe, 999 se recusou
+CC34 | Média de dor dos últimos 12 meses. | Escala de 1 a 10, 998 não sabe, 999 se recusou
+CC35 | Alívio a partir do tratamento providenciado. | Escala de 1 a 10, 998 não sabe, 999 se recusou
 CC48 | Tem visita regular ao médico quando precisa de cuidados médicos de rotina. | Binário (1 sim, 5 não)
 CC48A | Tem lugar regular para ir quando quando precisa de cuidados médicos de rotina. | 1 sim, 5 não, 8 não sabe
 CC49A | Visitas ao médico ano passado. | Numérico, 998 não sabe
