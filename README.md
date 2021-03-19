@@ -40,7 +40,7 @@ Analisando os problemas existentes na base foi encontrado incompletude (valores 
 <p align="left">
     <i>Tabela 01: Atributos que foram renomeados - dataset Titanic</i>
 </p>
-
+<br>
 
 >#### 2.2 Visão geral da base de dados em estudo:<br>
 <p align="justify">
