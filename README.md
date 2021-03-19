@@ -28,12 +28,16 @@ Visão geral das bases de dados<br>
 <p align="justify">
 A base de dados possui informações a respeito dos tripulantes do navio Titanic, como informações pessoais desde o nome, idade, suas relações familiares a bordo e embarque, se sobreviveram etc, no qual deseja-se prever se certos dados de um indivíduo aumentam a chance de sobrevivência e se sim, quais seriam os fatores, sendo portanto o survived o atributo alvo. Foi possível observar que os tipos de atributos existentes são categóricos (nominais e binário) e também numéricos (discreto e contínuo). Ademais a isso, acredita-se que existem atributos irrelevantes para o propósito estabelecido como passengerId, name, cabin e ticket, pois não influenciam na sobrevivência (ou não sobrevivência) do indivíduo. É válido ressaltar que a base possui 891 registros e foi disponibilizada em formato csv. 
 Analisando os problemas existentes na base foi encontrado incompletude (valores ausentes referentes a cabine, idade e porto de embarque), inconsistência (violação de domínio na idade e algumas discrepâncias quando preço da passagem e classe do navio são associados). Visto isso, para melhor clareza e qualidade dos dados, alguns atributos foram renomeados para melhor entendimento, são eles:<br>
-- SibSp: siblingsSpousesOnboard <br>
-- Parch: parentsChildrenOnboard <br>
-- Fare: fareTicket <br>
-- Embarked: embarkedHarbor <br>
-- pClass: shipClass <br>
 </p>
+| Nome | Novo nome |
+|------|-----------|
+| SibSp | siblingsSpousesOnboard |
+| Parch | parentsChildrenOnboard |
+| Fare | fareTicket |
+| Embarked | embarkedHarbor |
+| pClass | shipClass |
+Tabela 01: Atributos que foram renomeados - dataset Titanic
+
 
 >#### 2.2 Visão geral da base de dados em estudo:<br>
 <p align="justify">
@@ -75,7 +79,7 @@ Feita a análise no dataset, os problemas encontrados foram a incompletude (muit
 | CC1M | Teve malária ou alguma outra doença parasitária | had_parasitic_disease |
 | CC1L | Teve qualquer outra doença pulmonar crônica | had_chronic_lung_disease |
 | CC1E | Teve alergias sazonais como febre do feno | had_seasonal_allergies |
-Tabela 01 - Atributos em que foram renomeados
+Tabela 02 - Atributos que foram renomeados - dataset Mania
 
 <p align="justify">
 Visto isso, também ao analisarmos os documentos junto à base de dados, separamos os atributos em que compreendíamos tanto a pergunta quanto a resposta dos atributos que não sabíamos a pergunta e/ou a resposta, ambos referentes às siglas SC e CC, como pode ser observado abaixo.
@@ -180,7 +184,7 @@ Visto isso, também ao analisarmos os documentos junto à base de dados, separam
 | SC33  | Irritou outras pessoas na infância.  | 1 sim, 5 não, 8 não sabe |
 | SC34  | Problemas com cuidadores na infância.  | 1 sim, 5 não, 8 não sabe, 9 recusou |
 | SC35  | Problemas com separação de parentes/amigos.  | 1 sim, 5 não, 8 não sabe |
-Tabela 02 - Atributos em que foram renomeados
+Tabela 03 - Atributos em que sabemos a pergunta e a respectiva resposta - dataset Mania
 
 | Nome |
 |------|
@@ -226,7 +230,7 @@ Tabela 02 - Atributos em que foram renomeados
 | SC33_1 |
 | SC33_2 |
 | SC33_3 |
-Tabela 03 - Atributos que não SABEMOS a pergunta E/OU a respectiva resposta (41)
+Tabela 04 - Atributos que não sabemos a pergunta e/ou a respectiva resposta (41) - dataset Mania
 
 <p align="justify">
 Por fim, detectamos siglas referenciadas nos documentos as quais não conseguimos descobrir do que se tratam, são elas:
@@ -240,7 +244,7 @@ Por fim, detectamos siglas referenciadas nos documentos as quais não conseguimo
 | AG1 |
 | IED3 |
 | SD1 |
-Tabela 04 - Referências desconhecidas (6)
+Tabela 05 - Referências desconhecidas nos documentos (6) - dataset Mania
 
 ### 3.Pré-processamento dos Datasets <br>
 
