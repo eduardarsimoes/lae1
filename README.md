@@ -193,50 +193,13 @@ SC35  | Problemas com separação de parentes/amigos.  | 1 sim, 5 não, 8 não
     <i>Tabela 03 - Atributos em que sabemos a pergunta e a respectiva resposta - dataset Mania</i>
 </p>
 
-| Nome |
-|---|
-| CC2 |
-| CC2A01 |
-| CC2A02 |
-| CC2A03 |
-| CC2A04 |
-| CC2A05 |
-| CC2A06 |
-| CC2A07 |
-| CC2A08 |
-| CC2A09 |
-| CC2A10 |
-| CC2A11 |
-| CC2A12 |
-| CC3 |
-| CC3A |
-| CC4 |
-| CC5 |
-| CC49C |
-| CC50A |
-| CC50B |
-| CC50C |
-| CC50D |
-| CC50E |
-| CC50I |
-| CC52 |
-| CC53 |
-| CC54 |
-| SC3  |
-| SC1_1 |
-| SC3A |
-| SC9 |
-| SC19 |
-| SC20A |
-| SC20_1  |
-| SC20_2  |
-| SC20_3  |
-| SC21 |
-| SC22 |
-| SC29A |
-| SC33_1 |
-| SC33_2 |
-| SC33_3 |
+| Nome | Nome | Nome | Nome |
+|---|---|---|---|
+| CC2 | CC2A05 | CC2A10 | CC50C |
+| CC2A01 | CC2A06 | CC2A11 | CC50D |
+| CC2A02 | CC2A07 | CC2A12 | CC50E |
+| CC2A03 | CC2A08 | CC3 | CC50I |
+| CC2A04 | CC2A09 | CC3A | CC52 |
 <p align="left">
     <i>Tabela 04 - Atributos que não sabemos a pergunta e/ou a respectiva resposta (41) - dataset Mania</i>
 </p>
@@ -245,14 +208,12 @@ SC35  | Problemas com separação de parentes/amigos.  | 1 sim, 5 não, 8 não
 Por fim, detectamos siglas referenciadas nos documentos as quais não conseguimos descobrir do que se tratam, são elas:
 </p>
 
-| Nome |
-| --- |
-| PD1 INTROD 1 |
-| SP1 |
-| SO1 |
-| AG1 |
-| IED3 |
-| SD1 |
+| Nome | Nome |
+| --- | --- |
+| PD1 INTROD 1 | AG1 |
+| SP1 | IED3 |
+| SO1 | SD1 |
+
 <p align="left">
     <i>Tabela 05 - Referências desconhecidas nos documentos (6) - dataset Mania</i>
 </p>
