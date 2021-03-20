@@ -343,7 +343,7 @@ No dataset foram encontrados valores que violam o domínio dos atributos (CC32, 
 </p>
 <br>
 
->#### 3.2.3 Correlação
+>##### 3.2.3 Correlação
 <p align="justify">
 A fim de afunilar o dataset, com a remoção de colunas com alta relação, ao calcularmos e analisarmos a correlação dos atributos, o grupo escolheu tirar as colunas de perguntas gerais que possuíam  correlação igual ou maior que 0,85 (valor absoluto), conforme tabela a seguir:
 </p>
@@ -404,10 +404,11 @@ Vale ressaltar que dividimos em dois datasets as colunas referentes às pergunta
 ### 4.Análise Exploratória dos datasets<br>
 Explore conjunto de dados por meio de uma ferramenta (EDA), destacando em suas observações o que for considerado mais relevante.<br>
 
->#### 4.1 Análise exploratória na base de dados clássica:
+>#### 4.1 Análise exploratória na base de dados clássica:<br>
 Análise gráfica do dataset sem tratamento: ![Profile Titanic raw](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/profile/titanic_raw.html)
 <br>
 Para fazer uma análise superficial dos dados pós tratamento: ![Profile Titanic done](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/profile/titanic_raw.html)
+<br>
 Recomendamos baixar os arquivos para os botões (toggle details) funcionarem.
 <br>
 <br>
@@ -416,6 +417,7 @@ Antes do tratamento dos dados, tínhamos 12 colunas e 891 registros, no qual a p
 Já após o pré processamento dos dados dos dataset, continuamos com 12 colunas, entretanto com 4 colunas “novas” referentes ao sex (2), embarked (3) (estas com one hot encoding) e categories_fareTicket (1) com encaixotamento. Visto que não eliminamos nenhum valor por estar nulo, mantivemos os 891 registros. Em contrapartida, passou a ter valores considerados duplicados (6.5%) após os atributos considerados relevantes terem sido excluídos, pois os mesmos que diferenciavam-os.
 </p>
 <br>
+
 >#### 4.2 Análise exploratória na base de dados em estudo:<br>
 O link para análise gráfica é este: ![Profile Mania raw](Mania/profile/mania_raw.html).
 <br>
