@@ -268,15 +268,12 @@ Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realiza
 <br>
 
 ### 4.Análise Exploratória dos datasets<br>
-Explore conjunto de dados por meio de uma ferramenta (EDA), destacando em suas observações o que for considerado mais relevante.
-
+Explore conjunto de dados por meio de uma ferramenta (EDA), destacando em suas observações o que for considerado mais relevante.<br>
+Para acessar os HTML abaixo, acessar: https://htmlpreview.github.io/
 >#### 4.1 Análise exploratória na base de dados clássica:<br>
 > ![Pandas Profile Titanic](Titanic/output.html)
 >#### 4.2 Análise exploratória na base de dados em estudo:<br>
 > ![Pandas Profile Mania](Mania/mania_raw.html)
-Sugestão: Utilizar ferramentas como Pandas Proffile e Sweetviz , Seaborn e Matplotlib <br>
-    
-[Tutorial básico com Seaborn](https://github.com/profmoisesomena/escience_and_tools/blob/master/seaborn/Seaborn_introduction.ipynb "Seaborn Introduction")
 
 ># Marco de Entrega 01: Itens do Sprint 01 <br>
     
