@@ -241,7 +241,7 @@ A partir do carregamento do dataset, o primeiro passo foi a verificação da exi
 Algumas colunas foram identificadas como irrelevantes pois não agregam muita informação para o modelo, apenas aumentando a complexidade. Para otimizar o modelo foram retiradas as seguintes colunas: nome do passageiro (não é relevante no caso de um naufrágio), o código do ticket que o passageiro comprou (novamente apenas um nome que não interfere) , o id do passageiro, que é apenas um código serial, e a cabine, uma vez que a classe nos proporciona a mesma informação.
 </p>
 
-![Encaixotamento](file:///C:/Users/55279/Pictures/Screenshots/removendo_atributos.png)
+![Encaixotamento](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/removendo_atributos.png)
 
 <br>
 
