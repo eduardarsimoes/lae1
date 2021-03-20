@@ -403,11 +403,32 @@ Vale ressaltar que dividimos em dois datasets as colunas referentes às pergunta
 
 ### 4.Análise Exploratória dos datasets<br>
 Explore conjunto de dados por meio de uma ferramenta (EDA), destacando em suas observações o que for considerado mais relevante.<br>
-Para acessar os HTML abaixo, acessar: https://htmlpreview.github.io/
->#### 4.1 Análise exploratória na base de dados clássica:<br>
-> ![Pandas Profile Titanic](Titanic/profile/output.html)
+
+>#### 4.1 Análise exploratória na base de dados clássica:
+Análise gráfica do dataset sem tratamento: ![Profile Titanic raw](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/profile/titanic_raw.html)
+<br>
+Para fazer uma análise superficial dos dados pós tratamento: ![Profile Titanic done](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/profile/titanic_raw.html)
+Recomendamos baixar os arquivos para os botões (toggle details) funcionarem.
+<br>
+<br>
+<p align="justify">
+Antes do tratamento dos dados, tínhamos 12 colunas e 891 registros, no qual a partir do uso do Profile Reporting foi possível observar que o dataset possuía 8,1% de missing cels (células vazias) e os mesmos foram tratados, como visto anteriormente. Os tipos eram numéricos (41,7%) e categóricos (58,3%), os quais os categóricos também foram tratados seja com a exclusão dos atributos por serem considerados irrelevantes ou com a técnica de one hot encoding e os numéricos muito discrepantes com a técnica de encaixotamento. Não havia nenhuma duplicata e não soubemos interpretar muito bem as medidas estatísticas para maiores conclusões (fora a frequência).
+Já após o pré processamento dos dados dos dataset, continuamos com 12 colunas, entretanto com 4 colunas “novas” referentes ao sex (2), embarked (3) (estas com one hot encoding) e categories_fareTicket (1) com encaixotamento. Visto que não eliminamos nenhum valor por estar nulo, mantivemos os 891 registros. Em contrapartida, passou a ter valores considerados duplicados (6.5%) após os atributos considerados relevantes terem sido excluídos, pois os mesmos que diferenciavam-os.
+</p>
+<br>
 >#### 4.2 Análise exploratória na base de dados em estudo:<br>
-> ![Pandas Profile Mania](Mania/profile/mania_raw.html)
+O link para análise gráfica é este: ![Profile Mania raw](Mania/profile/mania_raw.html).
+<br>
+Para fazer uma análise superficial, este link abre códigos HTML do git: ![Profile Mania done](Mania/profile/mania_done.html)
+Recomendamos baixar os arquivos para os botões (toggle details) funcionarem. 
+<br>
+<br>
+<p align="justify">
+Antes do tratamento do dataset, temos 229 colunas e 5037 registros, tendo assim 1.153.473‬ células. Com a ajuda da ferramenta, descobrimos acertadamente que 53.2% destas estavam vazias, o que é um grave problema que foi tratado no pré-processamento.
+Foi interessante descobrir que 141 colunas (61,6%) são do tipo categórico - a variável target inclusa, enquanto 79 (34,5%) são do tipo numérico. As variáveis reportadas como “não suportadas” são justamente as colunas retiradas no pré-processamento por estarem completamente vazias. Não soubemos interpretar muito bem as medidas estatísticas (fora a frequência).
+Após o pré-processamento, o dataset ficou com uma coluna que não sabemos a origem (df_index), que aparenta representar o número da linha dos registros. Como mencionado na seção 3, o input last observation ainda deixou uma pequena quantidade de nulos distribuída entre as colunas (0,2% das células), tratado antes de treinar o modelo. Reduzimos a quantidade de colunas em 30,6% (de 229 para 159) e a quantidade de registros em 86% (de 5037 para 708).
+</p>
+<br>
 
 ># Marco de Entrega 01: Itens do Sprint 01 <br>
     
