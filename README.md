@@ -322,6 +322,9 @@ A abordagem utilizada para tratar os valores discrepantes que o dataset apresent
 </p>
 
 <br>
+>##### 3.1.8 Treinamento e teste
+!()[]
+<br>
 
 >#### 3.2 Pré-processamento e tratamento na base de dados em estudo:<br>
 As decisões de projeto tomadas para o pré processamento do dataset Mania foram divididas em etapas. São elas:
@@ -438,6 +441,10 @@ Já as colunas de mania, o threshold considerado foi de 0.95 (valor absoluto). A
 <p align="justify">
 Vale ressaltar que dividimos em dois datasets as colunas referentes às perguntas gerais e as perguntas específicas de mania. A coluna target não foi levada em consideração.
 </p> 
+<br>
+
+>##### 3.2.4 Treinamento e teste
+!()[]
 <br>
 
 ### 4.Análise Exploratória dos datasets<br>
