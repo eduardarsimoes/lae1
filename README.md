@@ -258,7 +258,9 @@ Foi necessário realizar a conversão no atributo sexo, e, primeiramente, haviam
 <p align="justify">
 Optamos por usar a abordagem binning em razão das discrepâncias encontradas no atributo fareTicket, com isso, separamos os atributos em 5 categorias, visando assim melhorar o desempenho do modelo, e também trazendo benefícios para quando posteriormente, fossemos realizar a identificação de outliers.
 </p>
-![alt text](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/encaixotamento_fareticket.png)
+
+![Encaixotamento](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/encaixotamento_fareticket.png)
+
 <br>
 
 >##### 3.1.6 Outliers
