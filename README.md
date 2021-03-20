@@ -276,7 +276,7 @@ Foi observado que as colunas embarkedHarbor e idade possuíam valores nulos. A i
 Foi necessário realizar a conversão no atributo sexo, e, primeiramente, haviamos utilizado a abordagem label enconding, porém, como a máquina pode atribuir um certo peso na hora do seu aprendizado, uma vez que 1 é maior que 0, decidimos trocar de abordagem, usando assim a one hot enconding.
 </p>
 
-![Conversao](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/sexo01codigo.png)
+![Conversao](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/onehot.png)
 <p align="left">
     <i>Imagem 05 - One hot enconding aplicado no atributo sexo - dataset Titanic</i>
 </p>
@@ -288,7 +288,7 @@ Foi necessário realizar a conversão no atributo sexo, e, primeiramente, haviam
 Optamos por usar a abordagem binning em razão das discrepâncias encontradas no atributo fareTicket, com isso, separamos os atributos em 5 categorias, visando assim melhorar o desempenho do modelo, e também trazendo benefícios para quando posteriormente, fossemos realizar a identificação de outliers.
 </p>
 
-![Encaixotamento](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/encaixotamento_fareticket.png)
+![Encaixotamento](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/binning.png)
 <p align="left">
     <i>Imagem 06 - Binning aplicado no atributo fareTicket - dataset Titanic</i>
 </p>
@@ -300,9 +300,14 @@ Optamos por usar a abordagem binning em razão das discrepâncias encontradas no
 A abordagem utilizada para tratar os valores discrepantes que o dataset apresentava foi a exclusão dos outliers, porém, após realizar a exclusão deles, percebemos que os outliers compunham cerca de 50% da base, com isso, optamos por não excluí-los.
 </p>
 
-![Outliers](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/print_outliers.png)
+![Outliers](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/esclusao_outliers.png)
 <p align="left">
-    <i>Imagem 07 - Outliers - dataset Titanic</i>
+    <i>Imagem 07 - Excluindo outliers - dataset Titanic</i>
+</p>
+
+![Outliers](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/iqr.png)
+<p align="left">
+    <i>Imagem 08 - Outliers - dataset Titanic</i>
 </p>
 
 <br>
@@ -313,7 +318,7 @@ A abordagem utilizada para tratar os valores discrepantes que o dataset apresent
 
 ![Balanceamento](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/balanceamento.png)
 <p align="left">
-    <i>Imagem 08 - Verificação do balanceamento do dataset - dataset Titanic</i>
+    <i>Imagem 09 - Verificação do balanceamento do dataset - dataset Titanic</i>
 </p>
 
 <br><br>
