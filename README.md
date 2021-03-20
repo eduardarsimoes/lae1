@@ -83,7 +83,7 @@ CC1M | Teve malária ou alguma outra doença parasitária | had_parasitic_diseas
 CC1L | Teve qualquer outra doença pulmonar crônica | had_chronic_lung_disease
 CC1E | Teve alergias sazonais como febre do feno | had_seasonal_allergies
 <p align="left">
-    <i>Tabela 02 - Atributos que foram renomeados - dataset Mania</i>
+    <i>Tabela 01 - Atributos que foram renomeados - dataset Mania</i>
 </p>
 
 <p align="justify">
@@ -190,7 +190,7 @@ SC33  | Irritou outras pessoas na infância.  | 1 sim, 5 não, 8 não sabe
 SC34  | Problemas com cuidadores na infância.  | 1 sim, 5 não, 8 não sabe, 9 recusou
 SC35  | Problemas com separação de parentes/amigos.  | 1 sim, 5 não, 8 não sabe
 <p align="left">
-    <i>Tabela 03 - Atributos em que sabemos a pergunta e a respectiva resposta - dataset Mania</i>
+    <i>Tabela 02 - Atributos em que sabemos a pergunta e a respectiva resposta - dataset Mania</i>
 </p>
 
 | Nome | Nome | Nome | Nome |
@@ -201,7 +201,7 @@ SC35  | Problemas com separação de parentes/amigos.  | 1 sim, 5 não, 8 não
 | CC2A03 | CC2A08 | CC3 | CC50I |
 | CC2A04 | CC2A09 | CC3A | CC52 |
 <p align="left">
-    <i>Tabela 04 - Atributos que não sabemos a pergunta e/ou a respectiva resposta (41) - dataset Mania</i>
+    <i>Tabela 03 - Atributos que não sabemos a pergunta e/ou a respectiva resposta (41) - dataset Mania</i>
 </p>
 
 <p align="justify">
@@ -215,7 +215,7 @@ Por fim, detectamos siglas referenciadas nos documentos as quais não conseguimo
 | SO1 | SD1 |
 
 <p align="left">
-    <i>Tabela 05 - Referências desconhecidas nos documentos (6) - dataset Mania</i>
+    <i>Tabela 04 - Referências desconhecidas nos documentos (6) - dataset Mania</i>
 </p>
 
 ### 3.Pré-processamento dos Datasets <br>
@@ -227,34 +227,33 @@ As decisões de projeto tomadas para o pré processamento do dataset clássico T
 >#### VALORES DUPLICADOS
 <p align="justify"> A partir do carregamento do dataset, o primeiro passo foi a verificação da existência de valores duplicados, no qual, até o momento, não apresentava nenhum. No entanto, após o tratamento dos atributos irrelevantes, novamente foi feita essa verificação, porém o dataset passou a apresentar 111 valores duplicados, com isso, realizamos o tratamento dos valores nulos, e verificamos novamente a quantidade de valores duplicados, valor esse que baixou para 58, mas continuou assim mesmo depois de todos os pré-processamentos adotados. </p>
 
->#### ATRIBUTOS IRRELEVANTES    <p align="justify">  </p>
+>##### ATRIBUTOS IRRELEVANTES    <p align="justify">  </p>
 <p align="justify"> Algumas colunas foram identificadas como irrelevantes pois não agregam muita informação para o modelo, apenas aumentando a complexidade. Para otimizar o modelo foram retiradas as seguintes colunas: nome do passageiro (não é relevante no caso de um naufrágio), o código do ticket que o passageiro comprou (novamente apenas um nome que não interfere) , o id do passageiro, que é apenas um código serial, e a cabine, uma vez que a classe nos proporciona a mesma informação. </p>
 
->#### TRATAMENTO DOS VALORES NULOS
+>##### TRATAMENTO DOS VALORES NULOS
 <p align="justify"> Foi observado que as colunas embarkedHarbor e idade possuíam valores nulos. A idade apresentava 177 registros nulos, equivalente a 19% de todas as respostas de idade. e embarkedHarbor apresentava apenas 2 dados nulos. Nas duas colunas foi usado a mesma abordagem, a Input last observation para usar o valor anterior para imputar o valor ausente. </p>
 
->#### CONVERSÃO DE DADOS CATEGÓRICOS EM DADOS NUMÉRICOS
+>##### CONVERSÃO DE DADOS CATEGÓRICOS EM DADOS NUMÉRICOS
 <p align="justify"> Foi necessário realizar a conversão no atributo sexo, e, primeiramente, haviamos utilizado a abordagem label enconding, porém, como a máquina pode atribuir um certo peso na hora do seu aprendizado, uma vez que 1 é maior que 0, decidimos trocar de abordagem, usando assim a one hot enconding. </p>
 
->#### ENCAIXOTAMENTO (BINNING)
+>##### ENCAIXOTAMENTO (BINNING)
 <p align="justify"> Optamos por usar a abordagem binning em razão das discrepâncias encontradas no atributo fareTicket, com isso, separamos os atributos em 5 categorias, visando assim melhorar o desempenho do modelo, e também trazendo benefícios para quando posteriormente, fossemos realizar a identificação de outliers. </p>
 
->#### OUTLIERS
+>##### OUTLIERS
 <p align="justify"> A abordagem utilizada para tratar os valores discrepantes que o dataset apresentava foi a exclusão dos outliers, porém, após realizar a exclusão deles, percebemos que os outliers compunham cerca de 50% da base, com isso, optamos por não excluí-los. </p>
 
->#### BALANCEAMENTO
+>##### BALANCEAMENTO
 <p align="justify"> Após a realização dos pré-processamentos citados anteriormente, fizemos a verificação do balanceamento do dataset, com isso, concluímos que apesar de estar um pouco desbalanceado, não era tão desigual a ponto de ser necessário o uso de alguma abordagem para balancear. </p>
 
-
->...
+<br>
 >#### 3.2 Pré-processamento e tratamento na base de dados em estudo:<br>
 As decisões de projeto tomadas para o pré processamento do dataset Mania foram divididas em etapas. São elas:
->#### TRATAMENTO DOS VALORES NULOS E BALANCEAMENTO
+>##### TRATAMENTO DOS VALORES NULOS E BALANCEAMENTO
 <p align="justify"> Foi observado que todos os atributos de mania (M) possuem porcentagem maior que 85% de linhas nulas, entretanto devido a sua relevância para com o nosso objetivo, definimos apenas a retirada dessas linhas que estivessem 100% nulas, mesmo sabendo que não é o caminho mais correto, pois podemos perder padrões importantes referentes aos dados gerais para determinação do paciente ter ou não mania. Decisão essa que foi tomada devido ao alto desbalanceamento. As técnicas de balanceamento undersampling e oversampling também foram consideradas, porém reduziam ou aumentavam excessivamente os dados e por isso, não optamos pelo uso, apenas para fins de comparação. Ademais a isso, técnicas mais avançadas foram superficialmente estudadas, entretanto não houve tempo suficiente para analisá-las e aplicá-las. Foi utilizado o método last input observation para as colunas com os nulos, porém, por algum motivo não identificado, ainda sobraram alguns campos restantes com nulos. Estes foram preenchidos pelo valor 1, pois ele está presente normalmente nos domínios.
 Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realizada a retirada das colunas iguais ou maiores que 90% de valores nulos. Além disso, foi considerado realizar um merge com os atributos CC26A e CC24F, pois ambos representam a mesma pergunta e possuem as respostas inversamente correlatas, permitindo, então, uma junção entre os mesmos, entretanto não foi possível por falta de tempo.
  </p>
  
->#### VIOLAÇÃO DE DOMÍNIO
+>##### VIOLAÇÃO DE DOMÍNIO
 <p align="justify"> No dataset foram encontrados valores que violam o domínio dos atributos (CC32, CC10B, CC10D) e, portanto, como solução foi decidido a retirada de uma casa decimal desses valores. Não tratamos por enquanto.</p>
 
 | Nome | Tipo resposta |
