@@ -255,8 +255,11 @@ Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realiza
  </p>
  
 >#### VIOLAÇÃO DE DOMÍNIO
-<p align="justify"> No dataset foram encontrados valores que violam o domínio dos atributos (CC32, CC10B, CC10D) e, portanto, como solução foi decidido a retirada de uma casa decimal desses valores. Não tratamos por enquanto. </p>
-
+<p align="justify"> No dataset foram encontrados valores que violam o domínio dos atributos (CC32, CC10B, CC10D) e, portanto, como solução foi decidido a retirada de uma casa decimal desses valores. Não tratamos por enquanto.</p>
+| Nome | Tipo resposta |
+| CC10B | Escala 0 a 10, 97 não se aplica, 98 não sabe, 99 recusou → um valor ‘30’ avulso |
+| CC10D | Escala 0 a 10, 97 não se aplica, 98 não sabe, 99 recusou → um valor ‘50’ avulso |
+| CC32 | Escala de 1 a 10, 998 não sabe, 999 se recusou → um valor ‘81’ avulso |
 
 
 ### 4.Análise Exploratória dos datasets<br>
