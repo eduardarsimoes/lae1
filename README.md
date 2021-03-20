@@ -262,7 +262,10 @@ Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realiza
 | CC10B | Escala 0 a 10, 97 não se aplica, 98 não sabe, 99 recusou → um valor ‘30’ avulso |
 | CC10D | Escala 0 a 10, 97 não se aplica, 98 não sabe, 99 recusou → um valor ‘50’ avulso |
 | CC32 | Escala de 1 a 10, 998 não sabe, 999 se recusou → um valor ‘81’ avulso |
-
+<p align="left">
+    <i>Tabela 05 - Atributos com violação de domínio (3) - dataset Mania</i>
+</p>
+<br>
 
 ### 4.Análise Exploratória dos datasets<br>
 Explore conjunto de dados por meio de uma ferramenta (EDA), destacando em suas observações o que for considerado mais relevante.
