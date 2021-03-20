@@ -224,9 +224,9 @@ Por fim, detectamos siglas referenciadas nos documentos as quais não conseguimo
 
 ### 3.Pré-processamento dos Datasets <br>
 
-![Colab Titanic](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/Titanic.ipynb)
-
 >#### 3.1 Pré-processamento e tratamento na base de dados clássica:<br>
+![Colab Titanic](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/Titanic.ipynb)
+<br>
 As decisões de projeto tomadas para o pré processamento do dataset clássico Titanic foram divididas em etapas. São elas:
 <br>
 
@@ -332,8 +332,9 @@ A abordagem utilizada para tratar os valores discrepantes que o dataset apresent
 
 <br>
 
-![Colab Mania](https://github.com/eduardarsimoes/lae1/blob/main/Mania/ManiaDS.ipynb)
 >#### 3.2 Pré-processamento e tratamento na base de dados em estudo:<br>
+![Colab Mania](https://github.com/eduardarsimoes/lae1/blob/main/Mania/ManiaDS.ipynb)
+<br>
 As decisões de projeto tomadas para o pré processamento do dataset Mania foram divididas em etapas. São elas:
 
 >##### 3.2.1 Tratamento dos valores nulos e balanceamento
