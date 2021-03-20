@@ -241,7 +241,7 @@ A partir do carregamento do dataset, o primeiro passo foi a verificação da exi
 Algumas colunas foram identificadas como irrelevantes pois não agregam muita informação para o modelo, apenas aumentando a complexidade. Para otimizar o modelo foram retiradas as seguintes colunas: nome do passageiro (não é relevante no caso de um naufrágio), o código do ticket que o passageiro comprou (novamente apenas um nome que não interfere) , o id do passageiro, que é apenas um código serial, e a cabine, uma vez que a classe nos proporciona a mesma informação.
 </p>
 
-![Encaixotamento](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/removendo_atributos.png)
+![alt text](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/removendo_atributos.png)
 
 <br>
 
@@ -270,11 +270,16 @@ Optamos por usar a abordagem binning em razão das discrepâncias encontradas no
 <p align="justify">
 A abordagem utilizada para tratar os valores discrepantes que o dataset apresentava foi a exclusão dos outliers, porém, após realizar a exclusão deles, percebemos que os outliers compunham cerca de 50% da base, com isso, optamos por não excluí-los.
 </p>
+
+![alt text](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/print_outliers.png)
+
 <br>
 
 >##### 3.1.7 Balanceamento
 <p align="justify"> Após a realização dos pré-processamentos citados anteriormente, fizemos a verificação do balanceamento do dataset, com isso, concluímos que apesar de estar um pouco desbalanceado, não era tão desigual a ponto de ser necessário o uso de alguma abordagem para balancear.
 </p>
+
+![alt text](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/balanceamento.png)
 
 <br><br>
 
