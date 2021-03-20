@@ -321,7 +321,7 @@ A abordagem utilizada para tratar os valores discrepantes que o dataset apresent
     <i>Imagem 09 - Verificação do balanceamento do dataset - dataset Titanic</i>
 </p>
 
-<br><br>
+<br>
 
 >#### 3.2 Pré-processamento e tratamento na base de dados em estudo:<br>
 As decisões de projeto tomadas para o pré processamento do dataset Mania foram divididas em etapas. São elas:
