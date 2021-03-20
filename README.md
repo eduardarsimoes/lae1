@@ -328,9 +328,37 @@ As decisões de projeto tomadas para o pré processamento do dataset Mania foram
 
 >##### 3.2.1 Tratamento dos valores nulos e balanceamento
 <p align="justify">
-Foi observado que todos os atributos de mania (M) possuem porcentagem maior que 85% de linhas nulas, entretanto devido a sua relevância para com o nosso objetivo, definimos apenas a retirada dessas linhas que estivessem 100% nulas, mesmo sabendo que não é o caminho mais correto, pois podemos perder padrões importantes referentes aos dados gerais para determinação do paciente ter ou não mania. Decisão essa que foi tomada devido ao alto desbalanceamento. As técnicas de balanceamento undersampling e oversampling também foram consideradas, porém reduziam ou aumentavam excessivamente os dados e por isso, não optamos pelo uso, apenas para fins de comparação. Ademais a isso, técnicas mais avançadas foram superficialmente estudadas, entretanto não houve tempo suficiente para analisá-las e aplicá-las. Foi utilizado o método last input observation para as colunas com os nulos, porém, por algum motivo não identificado, ainda sobraram alguns campos restantes com nulos. Estes foram preenchidos pelo valor 1, pois ele está presente normalmente nos domínios.
-Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realizada a retirada das colunas iguais ou maiores que 90% de valores nulos. Além disso, foi considerado realizar um merge com os atributos CC26A e CC24F, pois ambos representam a mesma pergunta e possuem as respostas inversamente correlatas, permitindo, então, uma junção entre os mesmos, entretanto não foi possível por falta de tempo.
+Foi observado que todos os atributos de mania (M) possuem porcentagem maior que 85% de linhas nulas, entretanto devido a sua relevância para com o nosso objetivo, definimos apenas a retirada dessas linhas que estivessem 100% nulas, mesmo sabendo que não é o caminho mais correto, pois podemos perder padrões importantes referentes aos dados gerais para determinação do paciente ter ou não mania. Decisão essa que foi tomada devido ao alto desbalanceamento.
 </p>
+
+![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/nulos.png)
+<p align="left">
+    <i>Imagem 10 - Verificação de nulos - dataset Mania</i>
+</p>
+
+<p align="justify"> 
+As técnicas de balanceamento undersampling e oversampling também foram consideradas, porém reduziam ou aumentavam excessivamente os dados e por isso, não optamos pelo uso, apenas para fins de comparação. Ademais a isso, técnicas mais avançadas foram superficialmente estudadas, entretanto não houve tempo suficiente para analisá-las e aplicá-las. Foi utilizado o método last input observation para as colunas com os nulos, porém, por algum motivo não identificado, ainda sobraram alguns campos restantes com nulos. Estes foram preenchidos pelo valor 1, pois ele está presente normalmente nos domínios.
+</p>
+
+![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/preenchendo_nulos.png)
+<p align="left">
+    <i>Imagem 11 - Preenchendo nulos com o método last input observation - dataset Mania</i>
+</p>
+
+![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/preenchendo_nulos_com1.png)
+<p align="left">
+    <i>Imagem 12 - Preenchendo restante dos nulos com abordagem de constante global - dataset Mania</i>
+</p>
+ 
+<p align="justify"> 
+Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realizada a retirada das colunas iguais á 100% de valores nulos. Além disso, foi considerado realizar um merge com os atributos CC26A e CC24F, pois ambos representam a mesma pergunta e possuem as respostas inversamente correlatas, permitindo, então, uma junção entre os mesmos, entretanto não foi possível por falta de tempo.
+</p>
+
+![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/removendo_colunas.png)
+<p align="left">
+    <i>Imagem 13 - Removendo colunas com 100% valores nulos - dataset Mania</i>
+</p>
+
 <br>
 
 >##### 3.2.2 Violação de domínio
@@ -362,6 +390,12 @@ A fim de afunilar o dataset, com a remoção de colunas com alta relação, ao c
     <i>Tabela 06 - Atributos com forte correlação (3) SC/CC - dataset Mania</i>
 </p>
 <br>
+
+![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/removendo_colunas_90%25.png)
+<p align="left">
+    <i>Imagem 14 - Removendo colunas com correlação - dataset Mania</i>
+</p>
+
 <br>
 
 <p align="justify">
