@@ -242,7 +242,7 @@ Algumas colunas foram identificadas como irrelevantes pois não agregam muita in
 </p>
 <br>
 
->##### 3.1.3 Tratatmento dos valores nulos
+>##### 3.1.3 Tratamento dos valores nulos
 <p align="justify">
 Foi observado que as colunas embarkedHarbor e idade possuíam valores nulos. A idade apresentava 177 registros nulos, equivalente a 19% de todas as respostas de idade. e embarkedHarbor apresentava apenas 2 dados nulos. Nas duas colunas foi usado a mesma abordagem, a Input last observation para usar o valor anterior para imputar o valor ausente.
 </p>
@@ -254,7 +254,7 @@ Foi necessário realizar a conversão no atributo sexo, e, primeiramente, haviam
 </p>
 <br>
 
->##### 3.1.5 Encaixatamento (BINNING)
+>##### 3.1.5 Encaixotamento (BINNING)
 <p align="justify">
 Optamos por usar a abordagem binning em razão das discrepâncias encontradas no atributo fareTicket, com isso, separamos os atributos em 5 categorias, visando assim melhorar o desempenho do modelo, e também trazendo benefícios para quando posteriormente, fossemos realizar a identificação de outliers.
 </p>
