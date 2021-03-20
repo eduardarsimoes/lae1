@@ -411,7 +411,7 @@ Para fazer uma análise superficial dos dados pós tratamento: ![Profile Titanic
 <br>
 Recomendamos baixar os arquivos para os botões (toggle details) funcionarem.
 <br>
-<br>
+
 <p align="justify">
 Antes do tratamento dos dados, tínhamos 12 colunas e 891 registros, no qual a partir do uso do Profile Reporting foi possível observar que o dataset possuía 8,1% de missing cels (células vazias) e os mesmos foram tratados, como visto anteriormente. Os tipos eram numéricos (41,7%) e categóricos (58,3%), os quais os categóricos também foram tratados seja com a exclusão dos atributos por serem considerados irrelevantes ou com a técnica de one hot encoding e os numéricos muito discrepantes com a técnica de encaixotamento. Não havia nenhuma duplicata e não soubemos interpretar muito bem as medidas estatísticas para maiores conclusões (fora a frequência).
 Já após o pré processamento dos dados dos dataset, continuamos com 12 colunas, entretanto com 4 colunas “novas” referentes ao sex (2), embarked (3) (estas com one hot encoding) e categories_fareTicket (1) com encaixotamento. Visto que não eliminamos nenhum valor por estar nulo, mantivemos os 891 registros. Em contrapartida, passou a ter valores considerados duplicados (6.5%) após os atributos considerados relevantes terem sido excluídos, pois os mesmos que diferenciavam-os.
@@ -422,8 +422,8 @@ Já após o pré processamento dos dados dos dataset, continuamos com 12 colunas
 O link para análise gráfica é este: ![Profile Mania raw](Mania/profile/mania_raw.html).
 <br>
 Para fazer uma análise superficial, este link abre códigos HTML do git: ![Profile Mania done](Mania/profile/mania_done.html)
-Recomendamos baixar os arquivos para os botões (toggle details) funcionarem. 
 <br>
+Recomendamos baixar os arquivos para os botões (toggle details) funcionarem. 
 <br>
 <p align="justify">
 Antes do tratamento do dataset, temos 229 colunas e 5037 registros, tendo assim 1.153.473‬ células. Com a ajuda da ferramenta, descobrimos acertadamente que 53.2% destas estavam vazias, o que é um grave problema que foi tratado no pré-processamento.
