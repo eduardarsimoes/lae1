@@ -242,6 +242,9 @@ Algumas colunas foram identificadas como irrelevantes pois não agregam muita in
 </p>
 
 ![Removendo](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/removendo_atributos.png)
+<p align="left">
+    <i>Imagem 01 - Atributos irrelevantes - dataset Titanic</i>
+</p>
 
 <br>
 
@@ -250,12 +253,21 @@ Algumas colunas foram identificadas como irrelevantes pois não agregam muita in
 Foi observado que as colunas embarkedHarbor e idade possuíam valores nulos. A idade apresentava 177 registros nulos, equivalente a 19% de todas as respostas de idade. </p>
 
 ![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/verificacaoNulos_tipos.png) 
- 
+ <p align="left">
+    <i>Imagem 02 - Verificação dos nulos - dataset Titanic</i>
+</p>
+
 <p align="justify"> EmbarkedHarbor apresentava apenas 2 dados nulos. Nas duas colunas foi usado a mesma abordagem, a Input last observation para usar o valor anterior para imputar o valor ausente. </p>
 
 ![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/preenche_nulos_age.png) 
+<p align="left">
+    <i>Imagem 03 - Preenchimento dos nulos do atributo age - dataset Titanic</i>
+</p>
 
 ![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/preenche_nulos_embarked.png) 
+<p align="left">
+    <i>Imagem 04 - Preenchimento dos nulos do atributo EmbarkedHarbor - dataset Titanic</i>
+</p>
 
 <br>
 
@@ -265,6 +277,9 @@ Foi necessário realizar a conversão no atributo sexo, e, primeiramente, haviam
 </p>
 
 ![Conversao](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/sexo01codigo.png)
+<p align="left">
+    <i>Imagem 05 - One hot enconding aplicado no atributo sexo - dataset Titanic</i>
+</p>
 
 <br>
 
@@ -274,6 +289,9 @@ Optamos por usar a abordagem binning em razão das discrepâncias encontradas no
 </p>
 
 ![Encaixotamento](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/encaixotamento_fareticket.png)
+<p align="left">
+    <i>Imagem 06 - Binning aplicado no atributo fareTicket - dataset Titanic</i>
+</p>
 
 <br>
 
@@ -283,6 +301,9 @@ A abordagem utilizada para tratar os valores discrepantes que o dataset apresent
 </p>
 
 ![Outliers](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/print_outliers.png)
+<p align="left">
+    <i>Imagem 07 - Outliers - dataset Titanic</i>
+</p>
 
 <br>
 
@@ -291,6 +312,9 @@ A abordagem utilizada para tratar os valores discrepantes que o dataset apresent
 </p>
 
 ![Balanceamento](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/balanceamento.png)
+<p align="left">
+    <i>Imagem 08 - Verificação do balanceamento do dataset - dataset Titanic</i>
+</p>
 
 <br><br>
 
