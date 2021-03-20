@@ -223,6 +223,11 @@ Por fim, detectamos siglas referenciadas nos documentos as quais não conseguimo
 Realize o Pré-processamento e Tratamento de Dados em sua base/dataset.
 
 >#### 3.1 Pré-processamento e tratamento na base de dados clássica:<br>
+>As decisões de projeto tomadas para o pré processamento do dataset clássico Titanic foram divididas em etapas. São elas:
+>####VALORES DUPLICADOS:
+A partir do carregamento do dataset, o primeiro passo foi a verificação da existência de valores duplicados, no qual, até o momento, não apresentava nenhum. No entanto, após o tratamento dos atributos irrelevantes, novamente foi feita essa verificação, porém o dataset passou a apresentar 111 valores duplicados, com isso, realizamos o tratamento dos valores nulos, e verificamos novamente a quantidade de valores duplicados, valor esse que baixou para 58, mas continuou assim mesmo depois de todos os pré-processamentos adotados.
+
+
 >...
 >#### 3.2 Pré-processamento e tratamento na base de dados em estudo:<br>
 >...    
