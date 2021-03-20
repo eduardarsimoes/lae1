@@ -241,20 +241,31 @@ A partir do carregamento do dataset, o primeiro passo foi a verificação da exi
 Algumas colunas foram identificadas como irrelevantes pois não agregam muita informação para o modelo, apenas aumentando a complexidade. Para otimizar o modelo foram retiradas as seguintes colunas: nome do passageiro (não é relevante no caso de um naufrágio), o código do ticket que o passageiro comprou (novamente apenas um nome que não interfere) , o id do passageiro, que é apenas um código serial, e a cabine, uma vez que a classe nos proporciona a mesma informação.
 </p>
 
-![alt text](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/removendo_atributos.png)
+![Removendo](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/removendo_atributos.png)
 
 <br>
 
 >##### 3.1.3 Tratamento dos valores nulos
 <p align="justify">
-Foi observado que as colunas embarkedHarbor e idade possuíam valores nulos. A idade apresentava 177 registros nulos, equivalente a 19% de todas as respostas de idade. e embarkedHarbor apresentava apenas 2 dados nulos. Nas duas colunas foi usado a mesma abordagem, a Input last observation para usar o valor anterior para imputar o valor ausente.
-</p>
+Foi observado que as colunas embarkedHarbor e idade possuíam valores nulos. A idade apresentava 177 registros nulos, equivalente a 19% de todas as respostas de idade. </p>
+
+![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/verificacaoNulos_tipos.png) 
+ 
+<p align="justify"> EmbarkedHarbor apresentava apenas 2 dados nulos. Nas duas colunas foi usado a mesma abordagem, a Input last observation para usar o valor anterior para imputar o valor ausente. </p>
+
+![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/preenche_nulos_age.png) 
+
+![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/preenche_nulos_embarked.png) 
+
 <br>
 
 >##### 3.1.4 Conversão de dados categóricos em dados numéricos
 <p align="justify">
 Foi necessário realizar a conversão no atributo sexo, e, primeiramente, haviamos utilizado a abordagem label enconding, porém, como a máquina pode atribuir um certo peso na hora do seu aprendizado, uma vez que 1 é maior que 0, decidimos trocar de abordagem, usando assim a one hot enconding.
 </p>
+
+![Conversao](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/sexo01codigo.png)
+
 <br>
 
 >##### 3.1.5 Encaixotamento (BINNING)
@@ -271,7 +282,7 @@ Optamos por usar a abordagem binning em razão das discrepâncias encontradas no
 A abordagem utilizada para tratar os valores discrepantes que o dataset apresentava foi a exclusão dos outliers, porém, após realizar a exclusão deles, percebemos que os outliers compunham cerca de 50% da base, com isso, optamos por não excluí-los.
 </p>
 
-![alt text](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/print_outliers.png)
+![Outliers](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/print_outliers.png)
 
 <br>
 
@@ -279,7 +290,7 @@ A abordagem utilizada para tratar os valores discrepantes que o dataset apresent
 <p align="justify"> Após a realização dos pré-processamentos citados anteriormente, fizemos a verificação do balanceamento do dataset, com isso, concluímos que apesar de estar um pouco desbalanceado, não era tão desigual a ponto de ser necessário o uso de alguma abordagem para balancear.
 </p>
 
-![alt text](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/balanceamento.png)
+![Balanceamento](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/balanceamento.png)
 
 <br><br>
 
