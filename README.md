@@ -85,6 +85,7 @@ CC1E | Teve alergias sazonais como febre do feno | had_seasonal_allergies
 <p align="left">
     <i>Tabela 02 - Atributos que foram renomeados - dataset Mania</i>
 </p>
+<br>
 
 <p align="justify">
 Visto isso, também ao analisarmos os documentos junto à base de dados, separamos os atributos em que compreendíamos tanto a pergunta quanto a resposta dos atributos que não sabíamos a pergunta e/ou a resposta, ambos referentes às siglas SC e CC, como pode ser observado abaixo.
@@ -192,6 +193,7 @@ SC35  | Problemas com separação de parentes/amigos.  | 1 sim, 5 não, 8 não
 <p align="left">
     <i>Tabela 03 - Atributos em que sabemos a pergunta e a respectiva resposta - dataset Mania</i>
 </p>
+<br>
 
 | Nome | Nome | Nome | Nome |
 |---|---|---|---|
@@ -203,6 +205,7 @@ SC35  | Problemas com separação de parentes/amigos.  | 1 sim, 5 não, 8 não
 <p align="left">
     <i>Tabela 04 - Atributos que não sabemos a pergunta e/ou a respectiva resposta (41) - dataset Mania</i>
 </p>
+<br>
 
 <p align="justify">
 Por fim, detectamos siglas referenciadas nos documentos as quais não conseguimos descobrir do que se tratam, são elas:
@@ -225,36 +228,43 @@ Realize o Pré-processamento e Tratamento de Dados em sua base/dataset.
 
 >#### 3.1 Pré-processamento e tratamento na base de dados clássica:<br>
 As decisões de projeto tomadas para o pré processamento do dataset clássico Titanic foram divididas em etapas. São elas:
+<br>
 
 >##### 3.1.1 Valores duplicados
 <p align="justify">
 A partir do carregamento do dataset, o primeiro passo foi a verificação da existência de valores duplicados, no qual, até o momento, não apresentava nenhum. No entanto, após o tratamento dos atributos irrelevantes, novamente foi feita essa verificação, porém o dataset passou a apresentar 111 valores duplicados, com isso, realizamos o tratamento dos valores nulos, e verificamos novamente a quantidade de valores duplicados, valor esse que baixou para 58, mas continuou assim mesmo depois de todos os pré-processamentos adotados.
 </p>
+<br>
 
 >##### 3.1.2 Atributos irrelevantes
 <p align="justify">
 Algumas colunas foram identificadas como irrelevantes pois não agregam muita informação para o modelo, apenas aumentando a complexidade. Para otimizar o modelo foram retiradas as seguintes colunas: nome do passageiro (não é relevante no caso de um naufrágio), o código do ticket que o passageiro comprou (novamente apenas um nome que não interfere) , o id do passageiro, que é apenas um código serial, e a cabine, uma vez que a classe nos proporciona a mesma informação.
 </p>
+<br>
 
 >##### 3.1.3 Tratatmento dos valores nulos
 <p align="justify">
 Foi observado que as colunas embarkedHarbor e idade possuíam valores nulos. A idade apresentava 177 registros nulos, equivalente a 19% de todas as respostas de idade. e embarkedHarbor apresentava apenas 2 dados nulos. Nas duas colunas foi usado a mesma abordagem, a Input last observation para usar o valor anterior para imputar o valor ausente.
 </p>
+<br>
 
 >##### 3.1.4 Conversão de dados categóricos em dados numéricos
 <p align="justify">
 Foi necessário realizar a conversão no atributo sexo, e, primeiramente, haviamos utilizado a abordagem label enconding, porém, como a máquina pode atribuir um certo peso na hora do seu aprendizado, uma vez que 1 é maior que 0, decidimos trocar de abordagem, usando assim a one hot enconding.
 </p>
+<br>
 
 >##### 3.1.5 Encaixatamento (BINNING)
 <p align="justify">
 Optamos por usar a abordagem binning em razão das discrepâncias encontradas no atributo fareTicket, com isso, separamos os atributos em 5 categorias, visando assim melhorar o desempenho do modelo, e também trazendo benefícios para quando posteriormente, fossemos realizar a identificação de outliers.
 </p>
+<br>
 
 >##### 3.1.6 Outliers
 <p align="justify">
 A abordagem utilizada para tratar os valores discrepantes que o dataset apresentava foi a exclusão dos outliers, porém, após realizar a exclusão deles, percebemos que os outliers compunham cerca de 50% da base, com isso, optamos por não excluí-los.
 </p>
+<br>
 
 >##### 3.1.7 Balanceamento
 <p align="justify"> Após a realização dos pré-processamentos citados anteriormente, fizemos a verificação do balanceamento do dataset, com isso, concluímos que apesar de estar um pouco desbalanceado, não era tão desigual a ponto de ser necessário o uso de alguma abordagem para balancear.
@@ -301,6 +311,7 @@ A fim de afunilar o dataset, com a remoção de colunas com alta relação, ao c
     <i>Tabela 06 - Atributos com forte correlação (3) SC/CC - dataset Mania</i>
 </p>
 <br>
+<br>
 
 <p align="justify">
 Já as colunas de mania, o threshold considerado foi de 0.95 (valor absoluto). As seguintes colunas foram retiradas:
@@ -337,6 +348,8 @@ Já as colunas de mania, o threshold considerado foi de 0.95 (valor absoluto). A
 <p align="left">
     <i>Tabela 07 - Atributos com forte correlação (26) M - dataset Mania</i>
 </p>
+<br>
+
 <p align="justify">
 Vale ressaltar que dividimos em dois datasets as colunas referentes às perguntas gerais e as perguntas específicas de mania. A coluna target não foi levada em consideração.
 </p> 
