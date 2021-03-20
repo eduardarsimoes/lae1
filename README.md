@@ -269,6 +269,7 @@ Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realiza
 
 >#### CORRELAÇÃO
 <p align="justify"> A fim de afunilar o dataset, com a remoção de colunas com alta relação, ao calcularmos e analisarmos a correlação dos atributos, o grupo escolheu tirar as colunas de perguntas gerais que possuíam  correlação igual ou maior que 0,85 (valor absoluto), conforme tabela a seguir: </p>
+
 | Atributos SC/CC correlacionados | Atributo SC/CC retirado |
 | --- | --- |
 | CC10D ←→ CC10C | CC10D |
@@ -279,6 +280,7 @@ Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realiza
 </p>
 <br>
 <p align="justify"> Já as colunas de mania, o threshold considerado foi de 0.95 (valor absoluto). As seguintes colunas foram retiradas: </p>
+
  | Atributos M correlacionados | Atributo M a ser retirado |
  | --- | --- |
 | M26 ←→ M19 | M26 |
