@@ -322,8 +322,14 @@ A abordagem utilizada para tratar os valores discrepantes que o dataset apresent
 </p>
 
 <br>
+
 >##### 3.1.8 Treinamento e teste
-!()[]
+
+![Precisao](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/precisao.png)
+<p align="left">
+    <i>Imagem 10 - Precisão do treino e do teste - dataset Titanic</i>
+</p>
+
 <br>
 
 >#### 3.2 Pré-processamento e tratamento na base de dados em estudo:<br>
@@ -336,7 +342,7 @@ Foi observado que todos os atributos de mania (M) possuem porcentagem maior que 
 
 ![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/nulos.png)
 <p align="left">
-    <i>Imagem 10 - Verificação de nulos - dataset Mania</i>
+    <i>Imagem 11 - Verificação de nulos - dataset Mania</i>
 </p>
 
 <p align="justify"> 
@@ -345,12 +351,12 @@ As técnicas de balanceamento undersampling e oversampling também foram conside
 
 ![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/preenchendo_nulos.png)
 <p align="left">
-    <i>Imagem 11 - Preenchendo nulos com o método last input observation - dataset Mania</i>
+    <i>Imagem 12 - Preenchendo nulos com o método last input observation - dataset Mania</i>
 </p>
 
 ![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/preenchendo_nulos_com1.png)
 <p align="left">
-    <i>Imagem 12 - Preenchendo restante dos nulos com abordagem de constante global - dataset Mania</i>
+    <i>Imagem 13 - Preenchendo restante dos nulos com abordagem de constante global - dataset Mania</i>
 </p>
  
 <p align="justify"> 
@@ -359,7 +365,7 @@ Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realiza
 
 ![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/removendo_colunas.png)
 <p align="left">
-    <i>Imagem 13 - Removendo colunas com 100% valores nulos - dataset Mania</i>
+    <i>Imagem 14 - Removendo colunas com 100% valores nulos - dataset Mania</i>
 </p>
 
 <br>
@@ -396,7 +402,7 @@ A fim de afunilar o dataset, com a remoção de colunas com alta relação, ao c
 
 ![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/removendo_colunas_90%25.png)
 <p align="left">
-    <i>Imagem 14 - Removendo colunas com correlação - dataset Mania</i>
+    <i>Imagem 15 - Removendo colunas com correlação - dataset Mania</i>
 </p>
 
 <br>
@@ -444,7 +450,12 @@ Vale ressaltar que dividimos em dois datasets as colunas referentes às pergunta
 <br>
 
 >##### 3.2.4 Treinamento e teste
-!()[]
+
+![Precisao](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/precisao.png)
+<p align="left">
+    <i>Imagem 16 - Precisão do treino e do teste - dataset Mania</i>
+</p>
+
 <br>
 
 ### 4.Análise Exploratória dos datasets<br>
