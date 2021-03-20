@@ -23,7 +23,7 @@ Visão geral das bases de dados<br>
 * quais são os tipos de atributos existentes e qual é o atributo alvo? 
 * quais são os problemas existentes?
 * qualidade e clareza: garantir que a semântica dos atributos seja clara (nomes coerentes com os dados, se necessário renomear atributos).
-
+<br><br>
 >#### 2.1 Visão geral da base de dados clássica:<br>
 <p align="justify">
 A base de dados possui informações a respeito dos tripulantes do navio Titanic, como informações pessoais desde o nome, idade, suas relações familiares a bordo e embarque, se sobreviveram etc, no qual deseja-se prever se certos dados de um indivíduo aumentam a chance de sobrevivência e se sim, quais seriam os fatores, sendo portanto o survived o atributo alvo. Foi possível observar que os tipos de atributos existentes são categóricos (nominais e binário) e também numéricos (discreto e contínuo). Ademais a isso, acredita-se que existem atributos irrelevantes para o propósito estabelecido como passengerId, name, cabin e ticket, pois não influenciam na sobrevivência (ou não sobrevivência) do indivíduo. É válido ressaltar que a base possui 891 registros e foi disponibilizada em formato csv. 
@@ -217,6 +217,7 @@ Por fim, detectamos siglas referenciadas nos documentos as quais não conseguimo
 <p align="left">
     <i>Tabela 05 - Referências desconhecidas nos documentos (6) - dataset Mania</i>
 </p>
+<br>
 
 ### 3.Pré-processamento dos Datasets <br>
 
@@ -224,38 +225,57 @@ Realize o Pré-processamento e Tratamento de Dados em sua base/dataset.
 
 >#### 3.1 Pré-processamento e tratamento na base de dados clássica:<br>
 As decisões de projeto tomadas para o pré processamento do dataset clássico Titanic foram divididas em etapas. São elas:
->#### VALORES DUPLICADOS
-<p align="justify"> A partir do carregamento do dataset, o primeiro passo foi a verificação da existência de valores duplicados, no qual, até o momento, não apresentava nenhum. No entanto, após o tratamento dos atributos irrelevantes, novamente foi feita essa verificação, porém o dataset passou a apresentar 111 valores duplicados, com isso, realizamos o tratamento dos valores nulos, e verificamos novamente a quantidade de valores duplicados, valor esse que baixou para 58, mas continuou assim mesmo depois de todos os pré-processamentos adotados. </p>
 
->#### ATRIBUTOS IRRELEVANTES    <p align="justify">  </p>
-<p align="justify"> Algumas colunas foram identificadas como irrelevantes pois não agregam muita informação para o modelo, apenas aumentando a complexidade. Para otimizar o modelo foram retiradas as seguintes colunas: nome do passageiro (não é relevante no caso de um naufrágio), o código do ticket que o passageiro comprou (novamente apenas um nome que não interfere) , o id do passageiro, que é apenas um código serial, e a cabine, uma vez que a classe nos proporciona a mesma informação. </p>
+>##### 3.1.1 Valores duplicados
+<p align="justify">
+A partir do carregamento do dataset, o primeiro passo foi a verificação da existência de valores duplicados, no qual, até o momento, não apresentava nenhum. No entanto, após o tratamento dos atributos irrelevantes, novamente foi feita essa verificação, porém o dataset passou a apresentar 111 valores duplicados, com isso, realizamos o tratamento dos valores nulos, e verificamos novamente a quantidade de valores duplicados, valor esse que baixou para 58, mas continuou assim mesmo depois de todos os pré-processamentos adotados.
+</p>
 
->#### TRATAMENTO DOS VALORES NULOS
-<p align="justify"> Foi observado que as colunas embarkedHarbor e idade possuíam valores nulos. A idade apresentava 177 registros nulos, equivalente a 19% de todas as respostas de idade. e embarkedHarbor apresentava apenas 2 dados nulos. Nas duas colunas foi usado a mesma abordagem, a Input last observation para usar o valor anterior para imputar o valor ausente. </p>
+>##### 3.1.2 Atributos irrelevantes
+<p align="justify">
+Algumas colunas foram identificadas como irrelevantes pois não agregam muita informação para o modelo, apenas aumentando a complexidade. Para otimizar o modelo foram retiradas as seguintes colunas: nome do passageiro (não é relevante no caso de um naufrágio), o código do ticket que o passageiro comprou (novamente apenas um nome que não interfere) , o id do passageiro, que é apenas um código serial, e a cabine, uma vez que a classe nos proporciona a mesma informação.
+</p>
 
->#### CONVERSÃO DE DADOS CATEGÓRICOS EM DADOS NUMÉRICOS
-<p align="justify"> Foi necessário realizar a conversão no atributo sexo, e, primeiramente, haviamos utilizado a abordagem label enconding, porém, como a máquina pode atribuir um certo peso na hora do seu aprendizado, uma vez que 1 é maior que 0, decidimos trocar de abordagem, usando assim a one hot enconding. </p>
+>##### 3.1.3 Tratatmento dos valores nulos
+<p align="justify">
+Foi observado que as colunas embarkedHarbor e idade possuíam valores nulos. A idade apresentava 177 registros nulos, equivalente a 19% de todas as respostas de idade. e embarkedHarbor apresentava apenas 2 dados nulos. Nas duas colunas foi usado a mesma abordagem, a Input last observation para usar o valor anterior para imputar o valor ausente.
+</p>
 
->#### ENCAIXOTAMENTO (BINNING)
-<p align="justify"> Optamos por usar a abordagem binning em razão das discrepâncias encontradas no atributo fareTicket, com isso, separamos os atributos em 5 categorias, visando assim melhorar o desempenho do modelo, e também trazendo benefícios para quando posteriormente, fossemos realizar a identificação de outliers. </p>
+>##### 3.1.4 Conversão de dados categóricos em dados numéricos
+<p align="justify">
+Foi necessário realizar a conversão no atributo sexo, e, primeiramente, haviamos utilizado a abordagem label enconding, porém, como a máquina pode atribuir um certo peso na hora do seu aprendizado, uma vez que 1 é maior que 0, decidimos trocar de abordagem, usando assim a one hot enconding.
+</p>
 
->#### OUTLIERS
-<p align="justify"> A abordagem utilizada para tratar os valores discrepantes que o dataset apresentava foi a exclusão dos outliers, porém, após realizar a exclusão deles, percebemos que os outliers compunham cerca de 50% da base, com isso, optamos por não excluí-los. </p>
+>##### 3.1.5 Encaixatamento (BINNING)
+<p align="justify">
+Optamos por usar a abordagem binning em razão das discrepâncias encontradas no atributo fareTicket, com isso, separamos os atributos em 5 categorias, visando assim melhorar o desempenho do modelo, e também trazendo benefícios para quando posteriormente, fossemos realizar a identificação de outliers.
+</p>
 
->#### BALANCEAMENTO
-<p align="justify"> Após a realização dos pré-processamentos citados anteriormente, fizemos a verificação do balanceamento do dataset, com isso, concluímos que apesar de estar um pouco desbalanceado, não era tão desigual a ponto de ser necessário o uso de alguma abordagem para balancear. </p>
+>##### 3.1.6 Outliers
+<p align="justify">
+A abordagem utilizada para tratar os valores discrepantes que o dataset apresentava foi a exclusão dos outliers, porém, após realizar a exclusão deles, percebemos que os outliers compunham cerca de 50% da base, com isso, optamos por não excluí-los.
+</p>
 
+>##### 3.1.7 Balanceamento
+<p align="justify"> Após a realização dos pré-processamentos citados anteriormente, fizemos a verificação do balanceamento do dataset, com isso, concluímos que apesar de estar um pouco desbalanceado, não era tão desigual a ponto de ser necessário o uso de alguma abordagem para balancear.
+</p>
 
->...
+<br><br>
+
 >#### 3.2 Pré-processamento e tratamento na base de dados em estudo:<br>
 As decisões de projeto tomadas para o pré processamento do dataset Mania foram divididas em etapas. São elas:
->#### TRATAMENTO DOS VALORES NULOS E BALANCEAMENTO
-<p align="justify"> Foi observado que todos os atributos de mania (M) possuem porcentagem maior que 85% de linhas nulas, entretanto devido a sua relevância para com o nosso objetivo, definimos apenas a retirada dessas linhas que estivessem 100% nulas, mesmo sabendo que não é o caminho mais correto, pois podemos perder padrões importantes referentes aos dados gerais para determinação do paciente ter ou não mania. Decisão essa que foi tomada devido ao alto desbalanceamento. As técnicas de balanceamento undersampling e oversampling também foram consideradas, porém reduziam ou aumentavam excessivamente os dados e por isso, não optamos pelo uso, apenas para fins de comparação. Ademais a isso, técnicas mais avançadas foram superficialmente estudadas, entretanto não houve tempo suficiente para analisá-las e aplicá-las. Foi utilizado o método last input observation para as colunas com os nulos, porém, por algum motivo não identificado, ainda sobraram alguns campos restantes com nulos. Estes foram preenchidos pelo valor 1, pois ele está presente normalmente nos domínios.
+
+>##### 3.2.1 Tratamento dos valores nulos e balanceamento
+<p align="justify">
+Foi observado que todos os atributos de mania (M) possuem porcentagem maior que 85% de linhas nulas, entretanto devido a sua relevância para com o nosso objetivo, definimos apenas a retirada dessas linhas que estivessem 100% nulas, mesmo sabendo que não é o caminho mais correto, pois podemos perder padrões importantes referentes aos dados gerais para determinação do paciente ter ou não mania. Decisão essa que foi tomada devido ao alto desbalanceamento. As técnicas de balanceamento undersampling e oversampling também foram consideradas, porém reduziam ou aumentavam excessivamente os dados e por isso, não optamos pelo uso, apenas para fins de comparação. Ademais a isso, técnicas mais avançadas foram superficialmente estudadas, entretanto não houve tempo suficiente para analisá-las e aplicá-las. Foi utilizado o método last input observation para as colunas com os nulos, porém, por algum motivo não identificado, ainda sobraram alguns campos restantes com nulos. Estes foram preenchidos pelo valor 1, pois ele está presente normalmente nos domínios.
 Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realizada a retirada das colunas iguais ou maiores que 90% de valores nulos. Além disso, foi considerado realizar um merge com os atributos CC26A e CC24F, pois ambos representam a mesma pergunta e possuem as respostas inversamente correlatas, permitindo, então, uma junção entre os mesmos, entretanto não foi possível por falta de tempo.
- </p>
- 
->#### VIOLAÇÃO DE DOMÍNIO
-<p align="justify"> No dataset foram encontrados valores que violam o domínio dos atributos (CC32, CC10B, CC10D) e, portanto, como solução foi decidido a retirada de uma casa decimal desses valores. Não tratamos por enquanto.</p>
+</p>
+<br>
+
+>##### 3.2.2 Violação de domínio
+<p align="justify">
+No dataset foram encontrados valores que violam o domínio dos atributos (CC32, CC10B, CC10D) e, portanto, como solução foi decidido a retirada de uma casa decimal desses valores. Não tratamos por enquanto.
+</p>
 
 | Nome | Tipo resposta |
 | --- | --- |
@@ -267,8 +287,10 @@ Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realiza
 </p>
 <br>
 
->#### CORRELAÇÃO
-<p align="justify"> A fim de afunilar o dataset, com a remoção de colunas com alta relação, ao calcularmos e analisarmos a correlação dos atributos, o grupo escolheu tirar as colunas de perguntas gerais que possuíam  correlação igual ou maior que 0,85 (valor absoluto), conforme tabela a seguir: </p>
+>#### 3.2.3 Correlação
+<p align="justify">
+A fim de afunilar o dataset, com a remoção de colunas com alta relação, ao calcularmos e analisarmos a correlação dos atributos, o grupo escolheu tirar as colunas de perguntas gerais que possuíam  correlação igual ou maior que 0,85 (valor absoluto), conforme tabela a seguir:
+</p>
 
 | Atributos SC/CC correlacionados | Atributo SC/CC retirado |
 | --- | --- |
@@ -279,10 +301,13 @@ Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realiza
     <i>Tabela 06 - Atributos com forte correlação (3) SC/CC - dataset Mania</i>
 </p>
 <br>
-<p align="justify"> Já as colunas de mania, o threshold considerado foi de 0.95 (valor absoluto). As seguintes colunas foram retiradas: </p>
 
- | Atributos M correlacionados | Atributo M a ser retirado |
- | --- | --- |
+<p align="justify">
+Já as colunas de mania, o threshold considerado foi de 0.95 (valor absoluto). As seguintes colunas foram retiradas:
+</p>
+
+| Atributos M correlacionados | Atributo M a ser retirado |
+| --- | --- |
 | M26 ←→ M19 | M26 |
 | M6 ←→ M1 | M6 |
 | M55 ←→ M6B1 | M55 |
@@ -312,18 +337,18 @@ Em relação aos atributos gerais, referentes aos conjuntos SC e CC, foi realiza
 <p align="left">
     <i>Tabela 07 - Atributos com forte correlação (26) M - dataset Mania</i>
 </p>
+<p align="justify">
+Vale ressaltar que dividimos em dois datasets as colunas referentes às perguntas gerais e as perguntas específicas de mania. A coluna target não foi levada em consideração.
+</p> 
 <br>
-<p align="justify"> Vale ressaltar que dividimos em dois datasets as colunas referentes às perguntas gerais e as perguntas específicas de mania. A coluna target não foi levada em consideração.
- </p> 
- 
 
 ### 4.Análise Exploratória dos datasets<br>
 Explore conjunto de dados por meio de uma ferramenta (EDA), destacando em suas observações o que for considerado mais relevante.<br>
 Para acessar os HTML abaixo, acessar: https://htmlpreview.github.io/
 >#### 4.1 Análise exploratória na base de dados clássica:<br>
-> ![Pandas Profile Titanic](Titanic/output.html)
+> ![Pandas Profile Titanic](Titanic/profile/output.html)
 >#### 4.2 Análise exploratória na base de dados em estudo:<br>
-> ![Pandas Profile Mania](Mania/mania_raw.html)
+> ![Pandas Profile Mania](Mania/profile/mania_raw.html)
 
 ># Marco de Entrega 01: Itens do Sprint 01 <br>
     
