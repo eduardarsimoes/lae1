@@ -1,6 +1,6 @@
 # DISCIPLINA: Laboratório de Extensão 1 - lae1
 
-# TRABALHO 01:  Dataset Mania + Titanic
+# TRABALHO:  Machine Learning
 
 # Sumário
 
@@ -493,7 +493,7 @@ Após o pré-processamento, o dataset ficou com uma coluna que não sabemos a or
 
 ># Marco de Entrega 01: Itens do Sprint 01 <br>
     
-### 5.processos de Classificação  (explicação + datasets)<br>
+### 5. Processos de Classificação  (explicação + datasets)<br>
     A) Explicação sobre o algoritmo/método de classificação adotado
     B) Implementar método nos datasets utilizados
     
@@ -503,7 +503,7 @@ Após o pré-processamento, o dataset ficou com uma coluna que não sabemos a or
 >...
 
 
-### 6.processos de Estimação  (explicação + datasets)<br>
+### 6. Processos de Estimação  (explicação + datasets)<br>
     A) Explicação sobre o algoritmo/método de classificação adotado
     B) Implementar método nos datasets utilizados
     
@@ -514,7 +514,7 @@ Após o pré-processamento, o dataset ficou com uma coluna que não sabemos a or
 >
 ># Marco de Entrega 02: Itens do Sprint 02 <br>
 
-### 7.Automated machine learning - AutoML <br>
+### 7. Automated machine learning - AutoML <br>
     A) Explicação sobre o que é e o processo de AutoML
     B) Aplicar o processo de AutoML nos conjuntos de dados utilizados
     
@@ -530,7 +530,7 @@ Após o pré-processamento, o dataset ficou com uma coluna que não sabemos a or
 
 ># Marco de Entrega 03: Conclusão das atividades <br>
 
-### 9 FORMATACAO NO GIT:<br> 
+### 9. FORMATACAO NO GIT:<br> 
 https://help.github.com/articles/basic-writing-and-formatting-syntax/
 <comentario no git>
     
