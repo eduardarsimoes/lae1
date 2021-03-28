@@ -554,9 +554,9 @@ Após o pré-processamento, o dataset ficou com uma coluna que não sabemos a or
 <p align="justify"> Por último, foi trocada a abordagem de conversão da coluna sexo, estava sendo utilizado o método one hot encoding, porém, as duas colunas geradas (sex_male e sex_female) estavam tendo alta correlação, com isso, a abordagem foi trocada para o método label encoder, não interferindo na acurácia.
 </p>
 
-![Conversao](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/duplicados_e_correla%C3%A7ao_sexo.png)
+![Correlação](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/duplicados_e_correla%C3%A7ao_sexo.png)
 <p align="left">
-    <i>Imagem 24 - label enconder aplicado no atributo sexo - dataset Titanic</i>
+    <i>Imagem 24 - correlação - dataset Titanic</i>
 </p>
 
 
