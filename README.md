@@ -498,7 +498,70 @@ Após o pré-processamento, o dataset ficou com uma coluna que não sabemos a or
     B) Implementar método nos datasets utilizados
     
 >#### 5.1 Processo de classificação na base de dados clássica:<br>
->...
+
+>##### 5.1.1 Tratamento dos valores nulos
+<p align="justify">Foi realizado mudança na abordagem de tratamento dos nulos da instância age, uma vez que antes estavam sendo preenchidos com base no valor da linha anterior, agora são preenchidos com base na média de idade.
+</p>
+
+![Nulos](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/p_nulos_media.png)
+<p align="left">
+    <i>Imagem 17 - Preenchendo nulos de idade - dataset Titanic</i>
+</p>
+
+>##### 5.1.2 Valores duplicados
+<p align="justify">Foi optado a não remoção dos dados duplicados, em razão de que na primeira verificação (com o dataset sem nenhum pré-processamento realizado) não havia dados duplicados, porém depois da remoção de algumas colunas, eles apareceram, com isso, considerando que o id, nome, cabine, e ticket desses passageiros não eram iguais, esse dados não são realmente duplicados. Com a não retirada, a acurácia de teste e de treino foram para 79%.
+</p>
+
+![Duplicados](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/duplicados_0.png)
+<p align="left">
+    <i>Imagem 18 - Dados duplicados antes da remoção de colunas irrelevantes - dataset Titanic</i>
+</p>
+
+![Duplicados](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/duplicados_114.png)
+<p align="left">
+    <i>Imagem 19 - Dados duplicados depois da remoção de colunas irrelevantes - dataset Titanic</i>
+</p>
+
+>##### 5.1.3 Atributos irrelevantes
+<p align="justify">Foi realizado a retirada de mais duas colunas, a coluna fareticket, devido a alta correlação com a coluna categories_fareTicket gerada através do binning e a coluna embarkedharbor, pela suposição de não agregação de informação importante e pelo geramento de três novas colunas depois de realizar o one hot encoding. Com essas duas remoções, o modelo passou a executar de forma mais otimizada, sem a necessidade de aumentar o número de iterações.
+</p>
+
+>##### 5.1.4 Exclusão dos outliers
+<p align="justify"> Novamente foi realizado a tentativa de exclusão dos outliers, porém, com sucesso dessa vez. Uma análise sobre o código de exclusão foi feito e sobre os outliers de fato existentes também. Com a exclusão, a acurácia de treino e teste subiram para respectivamente 82% e 80%. Contudo, ainda estava removendo muitos dados do nosso dataset, então foi realizado a modificação do código, trocando o valor do cálculo de 1.5 para 3, visando excluir uma quantidade menor de outliers, e consequentemente a acurácia de treino e teste foram para respectivamente 81% e 84%.
+</p>
+
+![Shape](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/shape_antes.png)
+<p align="left">
+    <i>Imagem 20 - Shape antes da exclusão dos outliers - dataset Titanic</i>
+</p>
+
+![Boxplot](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/outliers_antes_exclusao.png)
+<p align="left">
+    <i>Imagem 21 - Boxplot antes da exclusão dos outliers - dataset Titanic</i>
+</p>
+
+![Boxplot](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/outliers_depois_exclusao.png)
+<p align="left">
+    <i>Imagem 22 - Boxplot depois da exclusão dos outliers - dataset Titanic</i>
+</p>
+
+![Shape](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/shape_depois.png)
+<p align="left">
+    <i>Imagem 23 - Shape depois da exclusão dos outliers - dataset Titanic</i>
+</p>
+
+>##### 5.1.5 Conversão de dados categóricos em dados numéricos
+<p align="justify"> Por último, foi trocada a abordagem de conversão da coluna sexo, estava sendo utilizado o método one hot encoding, porém, as duas colunas geradas (sex_male e sex_female) estavam tendo alta correlação, com isso, a abordagem foi trocada para o método label encoder, não interferindo na acurácia.
+</p>
+
+![Conversao](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/duplicados_e_correla%C3%A7ao_sexo.png)
+<p align="left">
+    <i>Imagem 05 - label enconder aplicado no atributo sexo - dataset Titanic</i>
+</p>
+
+
+
+
 >#### 5.2 Processo de classificação na base de dados obtida:<br>
 >...
 
