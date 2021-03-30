@@ -559,23 +559,97 @@ Após o pré-processamento, o dataset ficou com uma coluna que não sabemos a or
     <i>Imagem 24 - correlação - dataset Titanic</i>
 </p>
 
-
-
+<br>
 
 >#### 5.2 Processo de classificação na base de dados obtida:<br>
 >...
-
 
 ### 6. Processos de Estimação  (explicação + datasets)<br>
     A) Explicação sobre o algoritmo/método de classificação adotado
     B) Implementar método nos datasets utilizados
     
+<p align="justify">
+O processo de estimação é considerado um tipo classificação que trabalha visando prever o resultado com base num atributo de classe normalmente ponto flutuante (real/float), ou seja, a análise de regressão está relacionada a processos estatísticos utilizados visando estimar as relações entre uma variável dependente (variável alvo/target) e uma ou mais variáveis independentes (características/ features).
+</p>
+Usada principalmente para dois propósitos conceitualmente distintos:
+- Predição e previsão;
+- Inferir relações causais entre as variáveis independentes e dependentes.
+<p align="justify">
+É válido ressaltar que para usar regressões para previsão ou para inferir relações causais, respectivamente, um pesquisador deve justificar cuidadosamente porque as relações existentes têm poder preditivo para um novo contexto ou porque uma relação entre duas variáveis tem uma interpretação causal (lembrar por exemplo que correlação não implica em causa).
+</p>
+
 >#### 6.1 Processo de estimação/regressão na base de dados clássica:<br>
 >...
 >#### 6.2 Processo de estimação/regressão na base de dados obtida:<br>
->...
->
-># Marco de Entrega 02: Itens do Sprint 02 <br>
+<p align="justify">
+As variáveis escolhidas foram a Temperatura e a Altitude, visto que a altitude é um dos principais fatores que influenciam no clima, no qual ambas as variáveis representadas normalmente são grandezas inversamentes proporcionais, ou seja, quanto maior a altitude menor a temperatura e vice versa.
+</p>
+
+![Separando](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_separandoConjunto.PNG)
+
+<br>
+
+<p align="justify">
+Dado isso, foi construído um gráfico para observá-las em que podemos analisar a tendência linear.
+</p>
+
+![Gráfico](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_tendencialinear.png)
+
+<br>
+
+Visto isso, foi realizada a separação da variável independente e da variável dependente.
+
+![Separando 2](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_separandoConjunto2.PNG)
+
+<br>
+
+<p align="justify">
+O modelo foi criado com a regressão linear e ajustado através da função fit(valoresAtltitude,valoresTemperatura).
+</p>
+
+![Modelo](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_modelo.PNG)
+
+<br>
+
+A partir do modelo criado, obtivemos as temperaturas estimadas.
+
+![Temperaturas estimadas](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_tempEstimada.PNG)
+
+<br>
+
+Calculamos então as métricas de desempenho através da MSE e R², no qual:
+- MSE (Erro Quadrático Médio): expressa a acurácia dos resultados numéricos do modelo, ou seja, quanto maior o valor, pior o desempenho. Erro neste caso significa a diferença dos valores observados.
+- R²: é a variância explicada pelas variáveis independentes, ou seja, quanto maior o valor, maior a correlação.
+![Metricas](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_metricas.PNG)
+
+<br>
+
+<p align="justify">
+Sendo possível constatar, portanto, que de acordo com as métricas de desempenho aplicadas ao modelo, o mesmo pode ser considerado um bom modelo.
+Ademais a isso, também foram calculados os coeficientes da equação de uma reta (Yi = β0 + β1 Xi), onde:
+</p>
+
+- β0: interseção, ou seja, valor de y (temperatura) quando x (altitude) é zero.
+- β1: inclinação da reta, ou seja, mede a variação em y dada uma variação em x.
+![Coeficientes](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_coeficientes.PNG)
+
+<br>
+
+<p align="justify">
+Portanto, através dos coeficientes angular e linear, pudemos aplicar a equação para cada valor de x e, assim, obter o valor esperado, também podendo comparar com o valor real e calculando os resíduos.
+</p>
+
+![Valor esperado](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_valorEsperado.PNG)
+
+<br>
+
+<p align="justify">
+Por fim, geramos um gráfico para melhor visualização dos resultados obtidos através da função lmplot da biblioteca seaborn que desenha um gráfico de dispersão de duas variáveis (x e y), em seguida, ajustam o modelo de regressão e representam a linha de regressão resultante.
+</p>
+
+![Resultado](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_resultado.png)
+
+<br>
 
 ### 7. Automated machine learning - AutoML <br>
     A) Explicação sobre o que é e o processo de AutoML
