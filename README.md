@@ -649,7 +649,7 @@ Portanto, através dos coeficientes angular e linear, pudemos aplicar a equaçã
 <br>
 
 <p align="justify">
-Por fim, geramos um gráfico para melhor visualização dos resultados obtidos através da função lmplot da biblioteca seaborn que desenha um gráfico de dispersão de duas variáveis (x e y), em seguida, ajustam o modelo de regressão e representam a linha de regressão resultante.
+Por fim, geramos um gráfico para melhor visualização dos resultados obtidos, através da função lmplot da biblioteca seaborn que desenha um gráfico de dispersão de duas variáveis (x e y), em seguida ajusta o modelo de regressão e representa a linha de regressão resultante.
 </p>
 
 ![Resultado](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_resultado.png)
