@@ -583,7 +583,7 @@ O processo de classificação adotado foi o de regressão logística, que visa e
     B) Implementar método nos datasets utilizados
     
 <p align="justify">
-O processo de estimação é considerado um tipo classificação que trabalha visando prever o resultado com base num atributo de classe normalmente ponto flutuante (real/float), ou seja, a análise de regressão está relacionada a processos estatísticos utilizados visando estimar as relações entre uma variável dependente (variável alvo/target) e uma ou mais variáveis independentes (características/ features).
+O processo de estimação é considerado um tipo de classificação que trabalha visando prever o resultado com base num atributo de classe normalmente ponto flutuante (real/float), ou seja, a análise de regressão está relacionada a processos estatísticos utilizados visando estimar as relações entre uma variável dependente (variável alvo/target) e uma ou mais variáveis independentes (características/ features).
 </p>
 
 Usada principalmente para dois propósitos conceitualmente distintos:
