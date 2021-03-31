@@ -563,6 +563,16 @@ O processo de classificação adotado foi o de regressão logística, que visa e
     <i>Imagem 24 - correlação - dataset Titanic</i>
 </p>
 
+>##### 5.1.6 Métricas
+<p align="justify"> Por fim, as métricas foram aplicadas para medir o quão distante o modelo está da classificação perfeita, são elas:
+</p>
+
+>##### Matriz de confusão
+<p align="justify"> Usada para calcular a quantidade de falso positivo, falso negativo, verdadeiro positivo e verdadeiro negativo, além de fornecer a acurácia, recall, f1 score e support.
+
+</p>
+
+
 <br>
 
 >#### 5.2 Processo de classificação na base de dados obtida:<br>
