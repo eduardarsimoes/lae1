@@ -567,7 +567,7 @@ O processo de classificação adotado foi o de regressão logística, que visa e
 <p align="justify"> Por fim, as métricas foram aplicadas para medir o quão distante o modelo está da classificação perfeita, são elas:
 </p>
 
->##### Matriz de confusão
+>###### Matriz de confusão
 <p align="justify"> Usada para calcular a quantidade de falso positivo, falso negativo, verdadeiro positivo e verdadeiro negativo, além de fornecer a acurácia, recall, f1 score e support.
 </p>
 
@@ -576,7 +576,7 @@ O processo de classificação adotado foi o de regressão logística, que visa e
     <i>Imagem 25 - Matriz de confusão - dataset Titanic</i>
 </p>
 
->##### Classificação probabilistíca
+>###### Classificação probabilistíca
 <p align="justify"> Usada para calcular a probabilidade de um passageiro ter sobrevivido ou não.
 </p>
 
