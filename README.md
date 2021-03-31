@@ -499,6 +499,10 @@ Após o pré-processamento, o dataset ficou com uma coluna que não sabemos a or
     
 >#### 5.1 Processo de classificação na base de dados clássica:<br>
 
+<p align="justify">
+O processo de classificação adotado foi o de regressão logística, que visa estimar as relações entre uma variável dependente categórica (atributo alvo/target), sendo normalmente do tipo ponto flutuante (real/float), e uma ou mais variáveis independentes (características/ features). Como já foi aplicado esse método no dataset Titanic, visamos melhorar o pré-processamento para obter melhor resultado. Contudo, os pré-processamentos modificados ou acrescentados foram:
+</p>
+
 >##### 5.1.1 Tratamento dos valores nulos
 <p align="justify">Foi realizado mudança na abordagem de tratamento dos nulos da instância age, uma vez que antes estavam sendo preenchidos com base no valor da linha anterior, agora são preenchidos com base na média de idade.
 </p>
