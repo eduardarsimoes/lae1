@@ -698,8 +698,6 @@ Calculamos então as métricas de desempenho através da MSE e R², no qual:
 - MSE (Erro Quadrático Médio): expressa a acurácia dos resultados numéricos do modelo, ou seja, quanto maior o valor, pior o desempenho. Erro neste caso significa a diferença dos valores observados.
 - R²: é a variância explicada pelas variáveis independentes, ou seja, quanto maior o valor, maior a correlação.
 
-<br>
-
 ![Metricas](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_metricas.PNG)
 
 <br>
@@ -722,7 +720,6 @@ Portanto, através dos coeficientes angular e linear, pudemos aplicar a equaçã
 
 ![Valor esperado](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_valorEsperado.PNG)
 
-<br>
 <br>
 
 <p align="justify">
