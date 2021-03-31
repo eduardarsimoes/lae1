@@ -569,7 +569,29 @@ O processo de classificação adotado foi o de regressão logística, que visa e
 
 >##### Matriz de confusão
 <p align="justify"> Usada para calcular a quantidade de falso positivo, falso negativo, verdadeiro positivo e verdadeiro negativo, além de fornecer a acurácia, recall, f1 score e support.
+</p>
 
+![Matriz](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/matriz_confus%C3%A3o.png)
+<p align="left">
+    <i>Imagem 25 - Matriz de confusão - dataset Titanic</i>
+</p>
+
+>##### Classificação probabilistíca
+<p align="justify"> Usada para calcular a probabilidade de um passageiro ter sobrevivido ou não.
+</p>
+
+![Probabilidade](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/classifica%C3%A7ao_probabilistica.png)
+<p align="left">
+    <i>Imagem 26 - Classificação probabilistíca - dataset Titanic</i>
+</p
+ 
+>##### Cross validate
+<p align="justify"> Usado para mostrar o desempenho do modelo para um novo conjunto de dados, a validação ocorre com ele particionando o conjunto de dados em subconjuntos, usando alguns subconjuntos para a estimação do treino e o restante para a estimação do teste.
+</p>
+
+![Cross_validate](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/cross_validate_titanic.png)
+<p align="left">
+    <i>Imagem 27 - Cross validate - dataset Titanic</i>
 </p>
 
 
