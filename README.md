@@ -583,7 +583,79 @@ Usada principalmente para dois propósitos conceitualmente distintos:
 <br>
 
 >#### 6.1 Processo de estimação/regressão na base de dados clássica:<br>
->...
+
+<p align="justify">
+Uma vez que a regressão linear é utilizada para estimar valores reais baseado em variáveis contínuas, tivemos dúvidas quanto à aplicação da mesma no Titanic dataset, devido aos tipos dos dados. Entretanto, para meios didáticos de aprendizado, efetuamos o processo de regressão mesmo assim e, para isso, as variáveis escolhidas para realizar a estimação foram a ‘fareticket’ por ser um número flutuando e a ‘survived’ por definir quem (não) sobreviveu.
+</p>
+
+
+![Separando](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/titanic_separandoConjunto.PNG)
+
+<br>
+
+<p align="justify">
+Foi construído um gráfico para observá-las.
+</p>
+
+
+![Gráfico](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/titanic_grafico1.png)
+
+<br>
+Visto isso, foi realizada a separação das variáveis.
+
+![Separando 2](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/titanic_separandoConjunto2.PNG)
+
+<br>
+
+<p align="justify">
+O modelo foi criado com a regressão linear e ajustado através da função fit(valoresFareTicket,valoresSurvived).
+</p>
+
+![Modelo](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/titanic_modelo.PNG)
+
+<br>
+
+A partir do modelo criado, obtivemos os fareTickets estimados.
+
+![FareTickets estimados](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/titanic_fareticketEstimado.PNG)
+
+<br>
+
+Calculamos então as métricas de desempenho através da MSE e R², no qual:
+- MSE (Erro Quadrático Médio): expressa a acurácia dos resultados numéricos do modelo, ou seja, quanto maior o valor, pior o desempenho. Erro neste caso significa a diferença dos valores observados.
+- R²: é a variância explicada pelas variáveis independentes, ou seja, quanto maior o valor, maior a correlação.
+
+![Metricas](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/titanic_metricas.PNG)
+
+<br>
+
+<p align="justify">
+Sendo possível constatar, portanto, que de acordo com as métricas de desempenho aplicadas ao modelo, o mesmo pode ser considerado um mau modelo.
+Ademais a isso, também foram calculados os coeficientes da equação de uma reta (Yi = β0 + β1 Xi), onde:
+</p>
+
+- β0: interseção, ou seja, valor de y (Survived) quando x (FareTicket) é zero.
+- β1: inclinação da reta, ou seja, mede a variação em y dada uma variação em x.
+
+![Coeficientes](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/titanic_coeficientes.PNG)
+
+<br>
+
+<p align="justify">
+Portanto, através dos coeficientes angular e linear, pudemos aplicar a equação para cada valor de x e, assim, obter o valor esperado, também podendo comparar com o valor real e calculando os resíduos.
+</p>
+
+![Valor esperado](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/titanic_valorEsperado.PNG)
+<br>
+
+<p align="justify">
+Por fim, geramos um gráfico para melhor visualização dos resultados obtidos através da função lmplot da biblioteca seaborn que desenha um gráfico de dispersão de duas variáveis (x e y), em seguida, ajustam o modelo de regressão e representam a linha de regressão resultante.
+</p>
+
+![Resultado](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/titanic_resultado.png)
+
+<br>
+<br>
 
 >#### 6.2 Processo de estimação/regressão na base de dados obtida:<br>
 <p align="justify">
@@ -595,7 +667,7 @@ As variáveis escolhidas foram a Temperatura e a Altitude, visto que a altitude 
 <br>
 
 <p align="justify">
-Dado isso, foi construído um gráfico para observá-las em que podemos analisar a tendência linear.
+Então, foi construído um gráfico para observá-las em que podemos analisar a tendência linear.
 </p>
 
 ![Gráfico](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_tendencialinear.png)
@@ -625,6 +697,9 @@ A partir do modelo criado, obtivemos as temperaturas estimadas.
 Calculamos então as métricas de desempenho através da MSE e R², no qual:
 - MSE (Erro Quadrático Médio): expressa a acurácia dos resultados numéricos do modelo, ou seja, quanto maior o valor, pior o desempenho. Erro neste caso significa a diferença dos valores observados.
 - R²: é a variância explicada pelas variáveis independentes, ou seja, quanto maior o valor, maior a correlação.
+
+<br>
+
 ![Metricas](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_metricas.PNG)
 
 <br>
@@ -636,6 +711,7 @@ Ademais a isso, também foram calculados os coeficientes da equação de uma ret
 
 - β0: interseção, ou seja, valor de y (temperatura) quando x (altitude) é zero.
 - β1: inclinação da reta, ou seja, mede a variação em y dada uma variação em x.
+
 ![Coeficientes](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_coeficientes.PNG)
 
 <br>
@@ -647,6 +723,7 @@ Portanto, através dos coeficientes angular e linear, pudemos aplicar a equaçã
 ![Valor esperado](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_valorEsperado.PNG)
 
 <br>
+<br>
 
 <p align="justify">
 Por fim, geramos um gráfico para melhor visualização dos resultados obtidos, através da função lmplot da biblioteca seaborn que desenha um gráfico de dispersão de duas variáveis (x e y), em seguida ajusta o modelo de regressão e representa a linha de regressão resultante.
@@ -654,6 +731,7 @@ Por fim, geramos um gráfico para melhor visualização dos resultados obtidos, 
 
 ![Resultado](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Imagens/estacoes_resultado.png)
 
+<br>
 <br>
 
 ># Marco de Entrega 02: Itens do Sprint 02
