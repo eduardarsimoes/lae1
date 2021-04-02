@@ -498,6 +498,8 @@ Após o pré-processamento, o dataset ficou com uma coluna que não sabemos a or
     B) Implementar método nos datasets utilizados
     
 >#### 5.1 Processo de classificação na base de dados clássica:<br>
+>
+![Colab Titanic](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/Titanic_Sprint2.ipynb)
 
 <p align="justify">
 O processo de classificação adotado foi o de regressão logística, que visa estimar as relações entre uma variável dependente categórica (atributo alvo/target), sendo normalmente do tipo ponto flutuante (real/float), e uma ou mais variáveis independentes (características/ features). Como já foi aplicado esse método no dataset Titanic, visamos melhorar o pré-processamento para obter melhor resultado. Contudo, os pré-processamentos modificados ou acrescentados foram:
@@ -598,7 +600,10 @@ O processo de classificação adotado foi o de regressão logística, que visa e
 <br>
 
 >#### 5.2 Processo de classificação na base de dados obtida:<br>
->...
+
+![Colab Mania](https://github.com/eduardarsimoes/lae1/blob/main/Mania/ManiaDS_Sprint2.ipynb)
+
+<br>
 
 ### 6. Processos de Estimação  (explicação + datasets)<br>
     A) Explicação sobre o algoritmo/método de classificação adotado
@@ -619,6 +624,8 @@ Usada principalmente para dois propósitos conceitualmente distintos:
 <br>
 
 >#### 6.1 Processo de estimação/regressão na base de dados clássica:<br>
+
+![Colab Titanic](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/Estimacao/Titanic_Regressao_Linear.ipynb)
 
 <p align="justify">
 Uma vez que a regressão linear é utilizada para estimar valores reais baseado em variáveis contínuas, tivemos dúvidas quanto à aplicação da mesma no Titanic dataset, devido aos tipos dos dados. Entretanto, para meios didáticos de aprendizado, efetuamos o processo de regressão mesmo assim e, para isso, as variáveis escolhidas para realizar a estimação foram a ‘fareticket’ por ser um número flutuando e a ‘survived’ por definir quem (não) sobreviveu.
@@ -694,6 +701,9 @@ Por fim, geramos um gráfico para melhor visualização dos resultados obtidos a
 <br>
 
 >#### 6.2 Processo de estimação/regressão na base de dados obtida:<br>
+
+![Colab Estacoes](https://github.com/eduardarsimoes/lae1/blob/main/Estacoes/Estimacao/EstacoesES_Regressao_Linear.ipynb)
+
 <p align="justify">
 As variáveis escolhidas foram a Temperatura e a Altitude, visto que a altitude é um dos principais fatores que influenciam no clima, no qual ambas as variáveis representadas normalmente são grandezas inversamentes proporcionais, ou seja, quanto maior a altitude menor a temperatura e vice versa.
 </p>
