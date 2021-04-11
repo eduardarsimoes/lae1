@@ -835,7 +835,7 @@ O machine learning automatizado, também conhecido como ML automatizado ou AutoM
 ### 8. Resultados e Artefatos
 >#### 8.1 Slides Finais
 
-![SLIDES](https://github.com/eduardarsimoes/lae1/blob/main/Sprint3_PechaKucha.pdf)
+[SLIDES](https://github.com/eduardarsimoes/lae1/blob/main/Sprint3_PechaKucha.pdf)
 
 <br>
 
