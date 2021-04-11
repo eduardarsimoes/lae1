@@ -780,14 +780,35 @@ Por fim, geramos um gráfico para melhor visualização dos resultados obtidos, 
 ># Marco de Entrega 02: Itens do Sprint 02
 
 ### 7. Automated machine learning - AutoML <br>
-    A) Explicação sobre o que é e o processo de AutoML
-    B) Aplicar o processo de AutoML nos conjuntos de dados utilizados
+
+<p align="justify">
+O machine learning automatizado, também conhecido como ML automatizado ou AutoML, é o processo de automatizar as tarefas demoradas e iterativas do desenvolvimento de modelo de machine learning. Com ele, cientistas de dados, analistas e desenvolvedores podem criar modelos de ML com alta escala, eficiência e produtividade, ao mesmo tempo em que dão suporte à qualidade do modelo. Sendo então o autoML um processo de descobrir qual a melhor pipeline de transformação de dados e qual melhor modelo a aplicar, realizou-se os testes de predição para cada dataset em questão, Titanic e Mania.
+</p>
+
     
 >#### 7.1 Processo de AutoML na base de dados clássica:<br>
->...
+
+
 >#### 7.2 Processo de AutoML na base de dados obtida:<br>
->...
->
+
+![Separando](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/m_separando.PNG)
+
+![Best dataset](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/m_best.PNG)
+
+![30 características](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/m_bestCaracteristicas.PNG)
+
+![Criando e treinando o modelo](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/m_automl1.PNG)
+
+![Predicts](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/m_automl2.PNG)
+
+![Matriz confusão e Report](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/m_matrizReport.PNG)
+
+![Resultado MC e Report](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/m_matrizReport2.PNG)
+
+![Acurácias](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/m_acuracias.PNG)
+
+<br>
+
 ### 8. Resultados e Artefatos
 >#### 8.1 Slides Finais
 >#### 8.3 Demais artefatos solicitados pelo professor
