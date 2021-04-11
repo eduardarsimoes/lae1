@@ -788,6 +788,29 @@ O machine learning automatizado, também conhecido como ML automatizado ou AutoM
     
 >#### 7.1 Processo de AutoML na base de dados clássica:<br>
 
+![Separando](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_separando.PNG)
+
+![Criando modelo](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_criandoModelo.PNG)
+
+![Definindo parâmetros](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_definindoParametros.PNG)
+
+![Treinando](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_fit.PNG)
+
+![Melhor resultado](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_melhorResultado.PNG)
+
+![Resultados](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_melhorResultado2.PNG)
+
+![Random Forest](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_randonForest.PNG)
+
+![Parâmetros em uso](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_parametrosUso.PNG)
+
+![Trocando hiperparâmetros](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_trocandoParametros.PNG)
+
+![Melhor resultado com novos parâmetros](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_melhorResultadoNovo.PNG)
+
+![Resultados novos](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_melhorResultadoNovo2.PNG)
+
+<br>
 
 >#### 7.2 Processo de AutoML na base de dados obtida:<br>
 
