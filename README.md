@@ -784,31 +784,17 @@ Por fim, geramos um gráfico para melhor visualização dos resultados obtidos, 
 <p align="justify">
 O machine learning automatizado, também conhecido como ML automatizado ou AutoML, é o processo de automatizar as tarefas demoradas e iterativas do desenvolvimento de modelo de machine learning. Com ele, cientistas de dados, analistas e desenvolvedores podem criar modelos de ML com alta escala, eficiência e produtividade, ao mesmo tempo em que dão suporte à qualidade do modelo. Sendo então o autoML um processo de descobrir qual a melhor pipeline de transformação de dados e qual melhor modelo a aplicar, realizou-se os testes de predição para cada dataset em questão, Titanic e Mania.
 </p>
-
     
 >#### 7.1 Processo de AutoML na base de dados clássica:<br>
 
-![Separando](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_separando.PNG)
+<p align="justify"> O AutoML no dataset Titanic foi aplicado com o pré-processamento que já haviamos realizado, dessa forma, acreditamos que esse seja o motivo do resultado não ter sido tão satisfatório quanto imaginávamos. Abaixo está o processo realizado e o resultado obtido:
+</p>
 
-![Criando modelo](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_criandoModelo.PNG)
+![AutoML](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/automl_1.png)
 
-![Definindo parâmetros](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_definindoParametros.PNG)
+![AutoML](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/automl_2.png)
 
-![Treinando](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_fit.PNG)
-
-![Melhor resultado](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_melhorResultado.PNG)
-
-![Resultados](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_melhorResultado2.PNG)
-
-![Random Forest](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_randonForest.PNG)
-
-![Parâmetros em uso](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_parametrosUso.PNG)
-
-![Trocando hiperparâmetros](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_trocandoParametros.PNG)
-
-![Melhor resultado com novos parâmetros](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_melhorResultadoNovo.PNG)
-
-![Resultados novos](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/t_melhorResultadoNovo2.PNG)
+![Resultado](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/automl_3.png)
 
 <br>
 
