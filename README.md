@@ -818,6 +818,9 @@ O machine learning automatizado, também conhecido como ML automatizado ou AutoM
 
 <br>
 
+<p align="justify"> Por fim, é válido ressaltar que devido ao uso do oversampling os resultados ficaram hiper ajustados, ou seja, não condizentes com a realidade. Todavia, não foi realizada a aplicação de ajustes devido a falta de tempo do grupo nessa etapa final da disciplina. Uma possível solução seria tratar os dados como nos casos de fraude, conforme orientado pelos docentes, acendendo um alerta a possíveis fatos, não definindo-nos.
+</p>
+
 ### 8. Resultados e Artefatos
 >#### 8.1 Slides Finais
 
