@@ -830,6 +830,14 @@ O machine learning automatizado, também conhecido como ML automatizado ou AutoM
 
 [SLIDES](https://github.com/eduardarsimoes/lae1/blob/main/Sprint3_PechaKucha.pdf)
 
+
+>#### 8.2 Demais artefatos
+Titanic:
+<br>
+<br>
+Mania: <br>
+![Pipeline Mania](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/pipeline_mania.PNG)
+
 <br>
 
 ># Marco de Entrega 03: Conclusão das atividades <br>
@@ -862,6 +870,6 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/
 #### Os usuários criados no GIT devem possuir o nome de identificação do aluno (não serão aceitos nomes como Eu123, meuprojeto, pro456, etc). Em caso de dúvida comunicar o professor.
 
 Link para curso de GIT<br>
-![https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
+[https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
 
 
