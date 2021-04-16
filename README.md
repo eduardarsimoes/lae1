@@ -787,6 +787,8 @@ O machine learning automatizado, também conhecido como ML automatizado ou AutoM
     
 >#### 7.1 Processo de AutoML na base de dados clássica:<br>
 
+[Colab Titanic AutoML](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/Titanic_Sprint3_AutoML.ipynb)
+
 <p align="justify"> O AutoML no dataset Titanic foi aplicado com o pré-processamento que já haviamos realizado, dessa forma, acreditamos que esse seja o motivo do resultado não ter sido tão satisfatório quanto imaginávamos. Abaixo está o processo realizado e o resultado obtido:
 </p>
 
@@ -799,6 +801,8 @@ O machine learning automatizado, também conhecido como ML automatizado ou AutoM
 <br>
 
 >#### 7.2 Processo de AutoML na base de dados obtida:<br>
+
+[Colab Mania AutoML](https://github.com/eduardarsimoes/lae1/blob/main/Mania/Mania_Sprint3_AutoML.ipynb)
 
 ![Separando](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/m_separando.PNG)
 
