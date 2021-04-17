@@ -832,9 +832,10 @@ O machine learning automatizado, também conhecido como ML automatizado ou AutoM
 
 
 >#### 8.2 Demais artefatos
-Titanic:
+Titanic: <br>
 <br>
-<br>
+![Pipeline Titanic](https://github.com/eduardarsimoes/lae1/blob/main/Titanic/imagens/pipeline.png)
+
 Mania: <br>
 ![Pipeline Mania](https://github.com/eduardarsimoes/lae1/blob/main/Mania/imagens/pipeline_mania.PNG)
 
